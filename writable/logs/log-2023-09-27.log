@@ -1,0 +1,1408 @@
+INFO - 2023-09-27 08:47:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 08:47:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 08:47:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 08:47:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 08:48:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-09-27 08:48:03 --> mysqli_sql_exception: Unknown column 'tbl_kosan.id_kamar' in 'on clause' in D:\XAMPP7\htdocs\kos-kosan\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\XAMPP7\htdocs\kos-kosan\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `tbl_kos...', 0)
+#1 D:\XAMPP7\htdocs\kos-kosan\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tbl_kos...')
+#2 D:\XAMPP7\htdocs\kos-kosan\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tbl_kos...')
+#3 D:\XAMPP7\htdocs\kos-kosan\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_kos...', Array, false)
+#4 D:\XAMPP7\htdocs\kos-kosan\app\Models\ModelKost.php(23): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\XAMPP7\htdocs\kos-kosan\app\Controllers\Admin.php(29): App\Models\ModelKost->SemuaData()
+#6 D:\XAMPP7\htdocs\kos-kosan\system\CodeIgniter.php(919): App\Controllers\Admin->DataKamar()
+#7 D:\XAMPP7\htdocs\kos-kosan\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#8 D:\XAMPP7\htdocs\kos-kosan\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\XAMPP7\htdocs\kos-kosan\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 D:\XAMPP7\htdocs\kos-kosan\system\Commands\Server\rewrite.php(47): require_once('D:\\XAMPP7\\htdoc...')
+#11 {main}
+CRITICAL - 2023-09-27 08:48:03 --> Unknown column 'tbl_kosan.id_kamar' in 'on clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_kosan`.*, `kamar`.*, `kamar_mandi`.*, `peraturan`.*
+FROM `tbl_kosan`
+JOIN `kamar` ON `kamar`.`id_kamar` = `tbl_kosan`.`id_kamar`
+JOIN `kamar_mandi` ON `kamar_mandi`.`id_kamar_mandi` = `tbl_kosan`.`id_kamar_mandi`
+JOIN `peraturan` ON `peraturan`.`id_peraturan` = `tbl_kosan`.`id_peraturan`', [], false)
+ 2 APPPATH\Models\ModelKost.php(23): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Admin.php(29): App\Models\ModelKost->SemuaData()
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->DataKamar()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\XAMPP7\\htdocs\\kos-kosan\\public\\index.php')
+INFO - 2023-09-27 08:49:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-09-27 08:49:39 --> mysqli_sql_exception: Unknown column 'tbl_kosan.id_kamar' in 'on clause' in D:\XAMPP7\htdocs\kos-kosan\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\XAMPP7\htdocs\kos-kosan\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `tbl_kos...', 0)
+#1 D:\XAMPP7\htdocs\kos-kosan\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tbl_kos...')
+#2 D:\XAMPP7\htdocs\kos-kosan\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tbl_kos...')
+#3 D:\XAMPP7\htdocs\kos-kosan\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_kos...', Array, false)
+#4 D:\XAMPP7\htdocs\kos-kosan\app\Models\ModelKost.php(23): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\XAMPP7\htdocs\kos-kosan\app\Controllers\Admin.php(29): App\Models\ModelKost->SemuaData()
+#6 D:\XAMPP7\htdocs\kos-kosan\system\CodeIgniter.php(919): App\Controllers\Admin->DataKamar()
+#7 D:\XAMPP7\htdocs\kos-kosan\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#8 D:\XAMPP7\htdocs\kos-kosan\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\XAMPP7\htdocs\kos-kosan\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 D:\XAMPP7\htdocs\kos-kosan\system\Commands\Server\rewrite.php(47): require_once('D:\\XAMPP7\\htdoc...')
+#11 {main}
+CRITICAL - 2023-09-27 08:49:39 --> Unknown column 'tbl_kosan.id_kamar' in 'on clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_kosan`.*, `kamar`.*, `kamar_mandi`.*, `peraturan`.*
+FROM `tbl_kosan`
+JOIN `kamar` ON `kamar`.`id_kamar` = `tbl_kosan`.`id_kamar`
+JOIN `kamar_mandi` ON `kamar_mandi`.`id_kamar_mandi` = `tbl_kosan`.`id_kamar_mandi`
+JOIN `peraturan` ON `peraturan`.`id_peraturan` = `tbl_kosan`.`id_peraturan`', [], false)
+ 2 APPPATH\Models\ModelKost.php(23): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Admin.php(29): App\Models\ModelKost->SemuaData()
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->DataKamar()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\XAMPP7\\htdocs\\kos-kosan\\public\\index.php')
+INFO - 2023-09-27 08:49:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-09-27 08:49:42 --> mysqli_sql_exception: Unknown column 'tbl_kosan.id_kamar' in 'on clause' in D:\XAMPP7\htdocs\kos-kosan\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\XAMPP7\htdocs\kos-kosan\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `tbl_kos...', 0)
+#1 D:\XAMPP7\htdocs\kos-kosan\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tbl_kos...')
+#2 D:\XAMPP7\htdocs\kos-kosan\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tbl_kos...')
+#3 D:\XAMPP7\htdocs\kos-kosan\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_kos...', Array, false)
+#4 D:\XAMPP7\htdocs\kos-kosan\app\Models\ModelKost.php(23): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\XAMPP7\htdocs\kos-kosan\app\Controllers\Admin.php(29): App\Models\ModelKost->SemuaData()
+#6 D:\XAMPP7\htdocs\kos-kosan\system\CodeIgniter.php(919): App\Controllers\Admin->DataKamar()
+#7 D:\XAMPP7\htdocs\kos-kosan\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#8 D:\XAMPP7\htdocs\kos-kosan\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\XAMPP7\htdocs\kos-kosan\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 D:\XAMPP7\htdocs\kos-kosan\system\Commands\Server\rewrite.php(47): require_once('D:\\XAMPP7\\htdoc...')
+#11 {main}
+CRITICAL - 2023-09-27 08:49:42 --> Unknown column 'tbl_kosan.id_kamar' in 'on clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_kosan`.*, `kamar`.*, `kamar_mandi`.*, `peraturan`.*
+FROM `tbl_kosan`
+JOIN `kamar` ON `kamar`.`id_kamar` = `tbl_kosan`.`id_kamar`
+JOIN `kamar_mandi` ON `kamar_mandi`.`id_kamar_mandi` = `tbl_kosan`.`id_kamar_mandi`
+JOIN `peraturan` ON `peraturan`.`id_peraturan` = `tbl_kosan`.`id_peraturan`', [], false)
+ 2 APPPATH\Models\ModelKost.php(23): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Admin.php(29): App\Models\ModelKost->SemuaData()
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->DataKamar()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\XAMPP7\\htdocs\\kos-kosan\\public\\index.php')
+INFO - 2023-09-27 08:49:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-09-27 08:49:43 --> mysqli_sql_exception: Unknown column 'tbl_kosan.id_kamar' in 'on clause' in D:\XAMPP7\htdocs\kos-kosan\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\XAMPP7\htdocs\kos-kosan\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `tbl_kos...', 0)
+#1 D:\XAMPP7\htdocs\kos-kosan\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tbl_kos...')
+#2 D:\XAMPP7\htdocs\kos-kosan\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tbl_kos...')
+#3 D:\XAMPP7\htdocs\kos-kosan\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_kos...', Array, false)
+#4 D:\XAMPP7\htdocs\kos-kosan\app\Models\ModelKost.php(23): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\XAMPP7\htdocs\kos-kosan\app\Controllers\Admin.php(29): App\Models\ModelKost->SemuaData()
+#6 D:\XAMPP7\htdocs\kos-kosan\system\CodeIgniter.php(919): App\Controllers\Admin->DataKamar()
+#7 D:\XAMPP7\htdocs\kos-kosan\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#8 D:\XAMPP7\htdocs\kos-kosan\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\XAMPP7\htdocs\kos-kosan\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 D:\XAMPP7\htdocs\kos-kosan\system\Commands\Server\rewrite.php(47): require_once('D:\\XAMPP7\\htdoc...')
+#11 {main}
+CRITICAL - 2023-09-27 08:49:43 --> Unknown column 'tbl_kosan.id_kamar' in 'on clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_kosan`.*, `kamar`.*, `kamar_mandi`.*, `peraturan`.*
+FROM `tbl_kosan`
+JOIN `kamar` ON `kamar`.`id_kamar` = `tbl_kosan`.`id_kamar`
+JOIN `kamar_mandi` ON `kamar_mandi`.`id_kamar_mandi` = `tbl_kosan`.`id_kamar_mandi`
+JOIN `peraturan` ON `peraturan`.`id_peraturan` = `tbl_kosan`.`id_peraturan`', [], false)
+ 2 APPPATH\Models\ModelKost.php(23): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Admin.php(29): App\Models\ModelKost->SemuaData()
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->DataKamar()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\XAMPP7\\htdocs\\kos-kosan\\public\\index.php')
+INFO - 2023-09-27 08:49:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-09-27 08:49:43 --> mysqli_sql_exception: Unknown column 'tbl_kosan.id_kamar' in 'on clause' in D:\XAMPP7\htdocs\kos-kosan\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\XAMPP7\htdocs\kos-kosan\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `tbl_kos...', 0)
+#1 D:\XAMPP7\htdocs\kos-kosan\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tbl_kos...')
+#2 D:\XAMPP7\htdocs\kos-kosan\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tbl_kos...')
+#3 D:\XAMPP7\htdocs\kos-kosan\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_kos...', Array, false)
+#4 D:\XAMPP7\htdocs\kos-kosan\app\Models\ModelKost.php(23): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\XAMPP7\htdocs\kos-kosan\app\Controllers\Admin.php(29): App\Models\ModelKost->SemuaData()
+#6 D:\XAMPP7\htdocs\kos-kosan\system\CodeIgniter.php(919): App\Controllers\Admin->DataKamar()
+#7 D:\XAMPP7\htdocs\kos-kosan\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#8 D:\XAMPP7\htdocs\kos-kosan\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\XAMPP7\htdocs\kos-kosan\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 D:\XAMPP7\htdocs\kos-kosan\system\Commands\Server\rewrite.php(47): require_once('D:\\XAMPP7\\htdoc...')
+#11 {main}
+CRITICAL - 2023-09-27 08:49:43 --> Unknown column 'tbl_kosan.id_kamar' in 'on clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_kosan`.*, `kamar`.*, `kamar_mandi`.*, `peraturan`.*
+FROM `tbl_kosan`
+JOIN `kamar` ON `kamar`.`id_kamar` = `tbl_kosan`.`id_kamar`
+JOIN `kamar_mandi` ON `kamar_mandi`.`id_kamar_mandi` = `tbl_kosan`.`id_kamar_mandi`
+JOIN `peraturan` ON `peraturan`.`id_peraturan` = `tbl_kosan`.`id_peraturan`', [], false)
+ 2 APPPATH\Models\ModelKost.php(23): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Admin.php(29): App\Models\ModelKost->SemuaData()
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->DataKamar()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\XAMPP7\\htdocs\\kos-kosan\\public\\index.php')
+INFO - 2023-09-27 08:49:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-09-27 08:49:43 --> mysqli_sql_exception: Unknown column 'tbl_kosan.id_kamar' in 'on clause' in D:\XAMPP7\htdocs\kos-kosan\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\XAMPP7\htdocs\kos-kosan\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `tbl_kos...', 0)
+#1 D:\XAMPP7\htdocs\kos-kosan\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tbl_kos...')
+#2 D:\XAMPP7\htdocs\kos-kosan\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tbl_kos...')
+#3 D:\XAMPP7\htdocs\kos-kosan\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_kos...', Array, false)
+#4 D:\XAMPP7\htdocs\kos-kosan\app\Models\ModelKost.php(23): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\XAMPP7\htdocs\kos-kosan\app\Controllers\Admin.php(29): App\Models\ModelKost->SemuaData()
+#6 D:\XAMPP7\htdocs\kos-kosan\system\CodeIgniter.php(919): App\Controllers\Admin->DataKamar()
+#7 D:\XAMPP7\htdocs\kos-kosan\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#8 D:\XAMPP7\htdocs\kos-kosan\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\XAMPP7\htdocs\kos-kosan\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 D:\XAMPP7\htdocs\kos-kosan\system\Commands\Server\rewrite.php(47): require_once('D:\\XAMPP7\\htdoc...')
+#11 {main}
+CRITICAL - 2023-09-27 08:49:43 --> Unknown column 'tbl_kosan.id_kamar' in 'on clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_kosan`.*, `kamar`.*, `kamar_mandi`.*, `peraturan`.*
+FROM `tbl_kosan`
+JOIN `kamar` ON `kamar`.`id_kamar` = `tbl_kosan`.`id_kamar`
+JOIN `kamar_mandi` ON `kamar_mandi`.`id_kamar_mandi` = `tbl_kosan`.`id_kamar_mandi`
+JOIN `peraturan` ON `peraturan`.`id_peraturan` = `tbl_kosan`.`id_peraturan`', [], false)
+ 2 APPPATH\Models\ModelKost.php(23): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Admin.php(29): App\Models\ModelKost->SemuaData()
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->DataKamar()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\XAMPP7\\htdocs\\kos-kosan\\public\\index.php')
+INFO - 2023-09-27 08:49:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-09-27 08:49:44 --> mysqli_sql_exception: Unknown column 'tbl_kosan.id_kamar' in 'on clause' in D:\XAMPP7\htdocs\kos-kosan\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\XAMPP7\htdocs\kos-kosan\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `tbl_kos...', 0)
+#1 D:\XAMPP7\htdocs\kos-kosan\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tbl_kos...')
+#2 D:\XAMPP7\htdocs\kos-kosan\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tbl_kos...')
+#3 D:\XAMPP7\htdocs\kos-kosan\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_kos...', Array, false)
+#4 D:\XAMPP7\htdocs\kos-kosan\app\Models\ModelKost.php(23): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\XAMPP7\htdocs\kos-kosan\app\Controllers\Admin.php(29): App\Models\ModelKost->SemuaData()
+#6 D:\XAMPP7\htdocs\kos-kosan\system\CodeIgniter.php(919): App\Controllers\Admin->DataKamar()
+#7 D:\XAMPP7\htdocs\kos-kosan\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#8 D:\XAMPP7\htdocs\kos-kosan\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\XAMPP7\htdocs\kos-kosan\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 D:\XAMPP7\htdocs\kos-kosan\system\Commands\Server\rewrite.php(47): require_once('D:\\XAMPP7\\htdoc...')
+#11 {main}
+CRITICAL - 2023-09-27 08:49:44 --> Unknown column 'tbl_kosan.id_kamar' in 'on clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_kosan`.*, `kamar`.*, `kamar_mandi`.*, `peraturan`.*
+FROM `tbl_kosan`
+JOIN `kamar` ON `kamar`.`id_kamar` = `tbl_kosan`.`id_kamar`
+JOIN `kamar_mandi` ON `kamar_mandi`.`id_kamar_mandi` = `tbl_kosan`.`id_kamar_mandi`
+JOIN `peraturan` ON `peraturan`.`id_peraturan` = `tbl_kosan`.`id_peraturan`', [], false)
+ 2 APPPATH\Models\ModelKost.php(23): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Admin.php(29): App\Models\ModelKost->SemuaData()
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->DataKamar()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\XAMPP7\\htdocs\\kos-kosan\\public\\index.php')
+INFO - 2023-09-27 08:50:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-09-27 08:50:33 --> mysqli_sql_exception: Table 'db_kost.kosan' doesn't exist in D:\XAMPP7\htdocs\kos-kosan\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\XAMPP7\htdocs\kos-kosan\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `kosan`....', 0)
+#1 D:\XAMPP7\htdocs\kos-kosan\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `kosan`....')
+#2 D:\XAMPP7\htdocs\kos-kosan\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `kosan`....')
+#3 D:\XAMPP7\htdocs\kos-kosan\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `kosan`....', Array, false)
+#4 D:\XAMPP7\htdocs\kos-kosan\app\Models\ModelKost.php(23): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\XAMPP7\htdocs\kos-kosan\app\Controllers\Admin.php(29): App\Models\ModelKost->SemuaData()
+#6 D:\XAMPP7\htdocs\kos-kosan\system\CodeIgniter.php(919): App\Controllers\Admin->DataKamar()
+#7 D:\XAMPP7\htdocs\kos-kosan\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#8 D:\XAMPP7\htdocs\kos-kosan\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\XAMPP7\htdocs\kos-kosan\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 D:\XAMPP7\htdocs\kos-kosan\system\Commands\Server\rewrite.php(47): require_once('D:\\XAMPP7\\htdoc...')
+#11 {main}
+CRITICAL - 2023-09-27 08:50:33 --> Table 'db_kost.kosan' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `kosan`.*, `kamar`.*, `kamar_mandi`.*, `peraturan`.*
+FROM `kosan`
+JOIN `kamar` ON `kamar`.`id_kamar` = `kosan`.`id_kamar`
+JOIN `kamar_mandi` ON `kamar_mandi`.`id_kamar_mandi` = `kosan`.`id_kamar_mandi`
+JOIN `peraturan` ON `peraturan`.`id_peraturan` = `kosan`.`id_peraturan`', [], false)
+ 2 APPPATH\Models\ModelKost.php(23): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Admin.php(29): App\Models\ModelKost->SemuaData()
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->DataKamar()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\XAMPP7\\htdocs\\kos-kosan\\public\\index.php')
+INFO - 2023-09-27 08:50:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-09-27 08:50:35 --> mysqli_sql_exception: Table 'db_kost.kosan' doesn't exist in D:\XAMPP7\htdocs\kos-kosan\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\XAMPP7\htdocs\kos-kosan\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `kosan`....', 0)
+#1 D:\XAMPP7\htdocs\kos-kosan\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `kosan`....')
+#2 D:\XAMPP7\htdocs\kos-kosan\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `kosan`....')
+#3 D:\XAMPP7\htdocs\kos-kosan\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `kosan`....', Array, false)
+#4 D:\XAMPP7\htdocs\kos-kosan\app\Models\ModelKost.php(23): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\XAMPP7\htdocs\kos-kosan\app\Controllers\Admin.php(29): App\Models\ModelKost->SemuaData()
+#6 D:\XAMPP7\htdocs\kos-kosan\system\CodeIgniter.php(919): App\Controllers\Admin->DataKamar()
+#7 D:\XAMPP7\htdocs\kos-kosan\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#8 D:\XAMPP7\htdocs\kos-kosan\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\XAMPP7\htdocs\kos-kosan\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 D:\XAMPP7\htdocs\kos-kosan\system\Commands\Server\rewrite.php(47): require_once('D:\\XAMPP7\\htdoc...')
+#11 {main}
+CRITICAL - 2023-09-27 08:50:35 --> Table 'db_kost.kosan' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `kosan`.*, `kamar`.*, `kamar_mandi`.*, `peraturan`.*
+FROM `kosan`
+JOIN `kamar` ON `kamar`.`id_kamar` = `kosan`.`id_kamar`
+JOIN `kamar_mandi` ON `kamar_mandi`.`id_kamar_mandi` = `kosan`.`id_kamar_mandi`
+JOIN `peraturan` ON `peraturan`.`id_peraturan` = `kosan`.`id_peraturan`', [], false)
+ 2 APPPATH\Models\ModelKost.php(23): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Admin.php(29): App\Models\ModelKost->SemuaData()
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->DataKamar()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\XAMPP7\\htdocs\\kos-kosan\\public\\index.php')
+INFO - 2023-09-27 08:50:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-09-27 08:50:36 --> mysqli_sql_exception: Table 'db_kost.kosan' doesn't exist in D:\XAMPP7\htdocs\kos-kosan\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\XAMPP7\htdocs\kos-kosan\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `kosan`....', 0)
+#1 D:\XAMPP7\htdocs\kos-kosan\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `kosan`....')
+#2 D:\XAMPP7\htdocs\kos-kosan\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `kosan`....')
+#3 D:\XAMPP7\htdocs\kos-kosan\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `kosan`....', Array, false)
+#4 D:\XAMPP7\htdocs\kos-kosan\app\Models\ModelKost.php(23): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\XAMPP7\htdocs\kos-kosan\app\Controllers\Admin.php(29): App\Models\ModelKost->SemuaData()
+#6 D:\XAMPP7\htdocs\kos-kosan\system\CodeIgniter.php(919): App\Controllers\Admin->DataKamar()
+#7 D:\XAMPP7\htdocs\kos-kosan\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#8 D:\XAMPP7\htdocs\kos-kosan\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\XAMPP7\htdocs\kos-kosan\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 D:\XAMPP7\htdocs\kos-kosan\system\Commands\Server\rewrite.php(47): require_once('D:\\XAMPP7\\htdoc...')
+#11 {main}
+CRITICAL - 2023-09-27 08:50:36 --> Table 'db_kost.kosan' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `kosan`.*, `kamar`.*, `kamar_mandi`.*, `peraturan`.*
+FROM `kosan`
+JOIN `kamar` ON `kamar`.`id_kamar` = `kosan`.`id_kamar`
+JOIN `kamar_mandi` ON `kamar_mandi`.`id_kamar_mandi` = `kosan`.`id_kamar_mandi`
+JOIN `peraturan` ON `peraturan`.`id_peraturan` = `kosan`.`id_peraturan`', [], false)
+ 2 APPPATH\Models\ModelKost.php(23): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Admin.php(29): App\Models\ModelKost->SemuaData()
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->DataKamar()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\XAMPP7\\htdocs\\kos-kosan\\public\\index.php')
+INFO - 2023-09-27 08:50:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 08:51:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 08:51:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 08:56:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 08:57:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 08:57:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 08:58:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 08:59:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 08:59:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 08:59:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 09:01:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 09:02:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 09:02:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 09:02:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 09:03:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 09:04:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 09:04:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 09:04:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 09:04:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 09:04:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 09:05:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 09:05:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 09:06:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 09:11:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 09:11:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 09:13:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 09:14:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 09:16:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 09:16:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 09:17:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 09:17:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 09:17:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 09:17:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 09:18:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 09:18:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 09:18:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 09:18:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 09:19:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 09:21:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 09:21:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 09:22:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 09:23:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 09:24:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 09:24:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 09:25:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 09:26:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 09:26:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 09:26:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 09:26:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-27 09:30:19 --> Undefined variable: value
+in APPPATH\Views\v_detail.php on line 12.
+ 1 APPPATH\Views\v_detail.php(12): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: value', 'D:\\XAMPP7\\htdocs\\kos-kosan\\app\\Views\\v_detail.php', 12, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\XAMPP7\\htdocs\\kos-kosan\\app\\Views\\v_detail.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('v_detail', [], true)
+ 5 APPPATH\Controllers\Home.php(37): view('v_detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->detail()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\XAMPP7\\htdocs\\kos-kosan\\public\\index.php')
+INFO - 2023-09-27 09:30:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 09:30:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 09:31:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 09:31:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 09:31:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 09:35:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-27 09:35:07 --> Cannot use object of type stdClass as array
+in APPPATH\Views\admin\v_data_kamar.php on line 35.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('admin/v_data_kamar', [], true)
+ 4 APPPATH\Views\admin\v_temp_admin.php(93): view('admin/v_data_kamar')
+ 5 SYSTEMPATH\View\View.php(226): include('D:\\XAMPP7\\htdocs\\kos-kosan\\app\\Views\\admin\\v_temp_admin.php')
+ 6 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('admin/v_temp_admin', [], true)
+ 8 APPPATH\Controllers\Admin.php(40): view('admin/v_temp_admin', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->DataKamar()
+10 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+11 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\XAMPP7\\htdocs\\kos-kosan\\public\\index.php')
+INFO - 2023-09-27 09:35:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 09:35:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-27 09:35:15 --> Cannot use object of type stdClass as array
+in APPPATH\Views\admin\v_data_kamar.php on line 35.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('admin/v_data_kamar', [], true)
+ 4 APPPATH\Views\admin\v_temp_admin.php(93): view('admin/v_data_kamar')
+ 5 SYSTEMPATH\View\View.php(226): include('D:\\XAMPP7\\htdocs\\kos-kosan\\app\\Views\\admin\\v_temp_admin.php')
+ 6 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('admin/v_temp_admin', [], true)
+ 8 APPPATH\Controllers\Admin.php(40): view('admin/v_temp_admin', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->DataKamar()
+10 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+11 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\XAMPP7\\htdocs\\kos-kosan\\public\\index.php')
+INFO - 2023-09-27 09:36:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 09:36:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 09:36:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 09:36:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-09-27 10:21:42 --> mysqli_sql_exception: Table 'db_kost.tbl_kosan' doesn't exist in D:\XAMPP7\htdocs\kos-kosan\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\XAMPP7\htdocs\kos-kosan\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\XAMPP7\htdocs\kos-kosan\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\XAMPP7\htdocs\kos-kosan\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\XAMPP7\htdocs\kos-kosan\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\XAMPP7\htdocs\kos-kosan\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\XAMPP7\htdocs\kos-kosan\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\XAMPP7\htdocs\kos-kosan\app\Controllers\Home.php(30): CodeIgniter\BaseModel->findAll()
+#7 D:\XAMPP7\htdocs\kos-kosan\system\CodeIgniter.php(919): App\Controllers\Home->detail()
+#8 D:\XAMPP7\htdocs\kos-kosan\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 D:\XAMPP7\htdocs\kos-kosan\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\XAMPP7\htdocs\kos-kosan\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 D:\XAMPP7\htdocs\kos-kosan\system\Commands\Server\rewrite.php(47): require_once('D:\\XAMPP7\\htdoc...')
+#12 {main}
+CRITICAL - 2023-09-27 10:21:42 --> Table 'db_kost.tbl_kosan' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_kosan`', [], false)
+ 2 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\Home.php(30): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->detail()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\XAMPP7\\htdocs\\kos-kosan\\public\\index.php')
+ERROR - 2023-09-27 10:21:43 --> mysqli_sql_exception: Table 'db_kost.tbl_kosan' doesn't exist in D:\XAMPP7\htdocs\kos-kosan\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\XAMPP7\htdocs\kos-kosan\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\XAMPP7\htdocs\kos-kosan\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\XAMPP7\htdocs\kos-kosan\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\XAMPP7\htdocs\kos-kosan\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\XAMPP7\htdocs\kos-kosan\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\XAMPP7\htdocs\kos-kosan\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\XAMPP7\htdocs\kos-kosan\app\Controllers\Home.php(17): CodeIgniter\BaseModel->findAll()
+#7 D:\XAMPP7\htdocs\kos-kosan\system\CodeIgniter.php(919): App\Controllers\Home->index()
+#8 D:\XAMPP7\htdocs\kos-kosan\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 D:\XAMPP7\htdocs\kos-kosan\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\XAMPP7\htdocs\kos-kosan\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 D:\XAMPP7\htdocs\kos-kosan\system\Commands\Server\rewrite.php(47): require_once('D:\\XAMPP7\\htdoc...')
+#12 {main}
+CRITICAL - 2023-09-27 10:21:43 --> Table 'db_kost.tbl_kosan' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_kosan`', [], false)
+ 2 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\Home.php(17): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->index()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\XAMPP7\\htdocs\\kos-kosan\\public\\index.php')
+INFO - 2023-09-27 10:21:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 10:21:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 10:21:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-27 10:30:58 --> Class 'App\Models\ModelKosan' not found
+in APPPATH\Controllers\Home.php on line 11.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\XAMPP7\\htdocs\\kos-kosan\\public\\index.php')
+INFO - 2023-09-27 10:31:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 10:31:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-09-27 10:31:05 --> mysqli_sql_exception: Table 'db_kost.kosan' doesn't exist in D:\XAMPP7\htdocs\kos-kosan\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\XAMPP7\htdocs\kos-kosan\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `kosan`....', 0)
+#1 D:\XAMPP7\htdocs\kos-kosan\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `kosan`....')
+#2 D:\XAMPP7\htdocs\kos-kosan\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `kosan`....')
+#3 D:\XAMPP7\htdocs\kos-kosan\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `kosan`....', Array, false)
+#4 D:\XAMPP7\htdocs\kos-kosan\app\Models\ModelKost.php(25): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\XAMPP7\htdocs\kos-kosan\app\Controllers\Admin.php(29): App\Models\ModelKost->SemuaData()
+#6 D:\XAMPP7\htdocs\kos-kosan\system\CodeIgniter.php(919): App\Controllers\Admin->DataKamar()
+#7 D:\XAMPP7\htdocs\kos-kosan\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#8 D:\XAMPP7\htdocs\kos-kosan\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\XAMPP7\htdocs\kos-kosan\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 D:\XAMPP7\htdocs\kos-kosan\system\Commands\Server\rewrite.php(47): require_once('D:\\XAMPP7\\htdoc...')
+#11 {main}
+CRITICAL - 2023-09-27 10:31:05 --> Table 'db_kost.kosan' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `kosan`.*, `kamar`.*, `kamar_mandi`.*, `peraturan`.*, `fasilitas_umum`.*, `fasilitas_parkir`.*
+FROM `kosan`
+JOIN `kamar` ON `kamar`.`id_kamar` = `kosan`.`id_kamar`
+JOIN `kamar_mandi` ON `kamar_mandi`.`id_kamar_mandi` = `kosan`.`id_kamar_mandi`
+JOIN `peraturan` ON `peraturan`.`id_peraturan` = `kosan`.`id_peraturan`
+JOIN `fasilitas_umum` ON `fasilitas_umum`.`id_fasum` = `kosan`.`id_fasum`
+JOIN `fasilitas_parkir` ON `fasilitas_parkir`.`id_fparkir` = `kosan`.`id_fparkir`', [], false)
+ 2 APPPATH\Models\ModelKost.php(25): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Admin.php(29): App\Models\ModelKost->SemuaData()
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->DataKamar()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\XAMPP7\\htdocs\\kos-kosan\\public\\index.php')
+INFO - 2023-09-27 10:31:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 10:31:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 10:31:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-27 10:37:05 --> Class 'App\Models\ModelKosan' not found
+in APPPATH\Controllers\Home.php on line 11.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\XAMPP7\\htdocs\\kos-kosan\\public\\index.php')
+INFO - 2023-09-27 10:38:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 10:38:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 10:39:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 10:39:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 10:40:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 10:42:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 10:42:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 10:47:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 10:49:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 10:49:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 10:50:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 11:01:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 11:06:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 11:06:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 11:06:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 11:07:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 11:07:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 11:07:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 11:07:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 11:08:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 11:08:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 11:10:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 11:10:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 11:11:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 11:11:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-27 11:11:49 --> Call to a member function insert() on array
+in APPPATH\Controllers\Admin.php on line 109.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->SimpanDataKamar()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\XAMPP7\\htdocs\\kos-kosan\\public\\index.php')
+INFO - 2023-09-27 11:17:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 11:17:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 11:17:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-09-27 11:17:44 --> mysqli_sql_exception: Table 'db_kost.tbl_user' doesn't exist in D:\XAMPP7\htdocs\kos-kosan\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\XAMPP7\htdocs\kos-kosan\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\XAMPP7\htdocs\kos-kosan\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\XAMPP7\htdocs\kos-kosan\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\XAMPP7\htdocs\kos-kosan\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\XAMPP7\htdocs\kos-kosan\system\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\XAMPP7\htdocs\kos-kosan\system\BaseModel.php(662): CodeIgniter\Model->doFirst()
+#6 D:\XAMPP7\htdocs\kos-kosan\app\Controllers\Login.php(29): CodeIgniter\BaseModel->first()
+#7 D:\XAMPP7\htdocs\kos-kosan\system\CodeIgniter.php(919): App\Controllers\Login->Aunt()
+#8 D:\XAMPP7\htdocs\kos-kosan\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#9 D:\XAMPP7\htdocs\kos-kosan\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\XAMPP7\htdocs\kos-kosan\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 D:\XAMPP7\htdocs\kos-kosan\system\Commands\Server\rewrite.php(47): require_once('D:\\XAMPP7\\htdoc...')
+#12 {main}
+CRITICAL - 2023-09-27 11:17:44 --> Table 'db_kost.tbl_user' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_user`
+WHERE `username` = :username:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(662): CodeIgniter\Model->doFirst()
+ 4 APPPATH\Controllers\Login.php(29): CodeIgniter\BaseModel->first()
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Login->Aunt()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\XAMPP7\\htdocs\\kos-kosan\\public\\index.php')
+INFO - 2023-09-27 11:19:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 11:19:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 11:19:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 11:19:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 11:31:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 11:31:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-09-27 11:31:59 --> mysqli_sql_exception: Column 'nama_kost' cannot be null in D:\XAMPP7\htdocs\kos-kosan\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\XAMPP7\htdocs\kos-kosan\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `ko...', 0)
+#1 D:\XAMPP7\htdocs\kos-kosan\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ko...')
+#2 D:\XAMPP7\htdocs\kos-kosan\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ko...')
+#3 D:\XAMPP7\htdocs\kos-kosan\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ko...', Array, false)
+#4 D:\XAMPP7\htdocs\kos-kosan\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\XAMPP7\htdocs\kos-kosan\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 D:\XAMPP7\htdocs\kos-kosan\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 D:\XAMPP7\htdocs\kos-kosan\app\Controllers\Admin.php(149): CodeIgniter\Model->insert(Array)
+#8 D:\XAMPP7\htdocs\kos-kosan\system\CodeIgniter.php(919): App\Controllers\Admin->SimpanDataKamar()
+#9 D:\XAMPP7\htdocs\kos-kosan\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#10 D:\XAMPP7\htdocs\kos-kosan\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\XAMPP7\htdocs\kos-kosan\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 D:\XAMPP7\htdocs\kos-kosan\system\Commands\Server\rewrite.php(47): require_once('D:\\XAMPP7\\htdoc...')
+#13 {main}
+CRITICAL - 2023-09-27 11:31:59 --> Column 'nama_kost' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `kost` (`nama_kost`, `alamat`, `rt`, `rw`, `kelurahan`, `link_maps`, `nama_pemilik`, `no_hp`, `jenis_kost`, `harga`) VALUES (:nama_kost:, :alamat:, :rt:, :rw:, :kelurahan:, :link_maps:, :nama_pemilik:, :no_hp:, :jenis_kost:, :harga:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Admin.php(149): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->SimpanDataKamar()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\XAMPP7\\htdocs\\kos-kosan\\public\\index.php')
+INFO - 2023-09-27 11:32:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-09-27 11:32:28 --> mysqli_sql_exception: Column 'nama_kost' cannot be null in D:\XAMPP7\htdocs\kos-kosan\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\XAMPP7\htdocs\kos-kosan\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `ko...', 0)
+#1 D:\XAMPP7\htdocs\kos-kosan\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ko...')
+#2 D:\XAMPP7\htdocs\kos-kosan\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ko...')
+#3 D:\XAMPP7\htdocs\kos-kosan\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ko...', Array, false)
+#4 D:\XAMPP7\htdocs\kos-kosan\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\XAMPP7\htdocs\kos-kosan\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 D:\XAMPP7\htdocs\kos-kosan\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 D:\XAMPP7\htdocs\kos-kosan\app\Controllers\Admin.php(149): CodeIgniter\Model->insert(Array)
+#8 D:\XAMPP7\htdocs\kos-kosan\system\CodeIgniter.php(919): App\Controllers\Admin->SimpanDataKamar()
+#9 D:\XAMPP7\htdocs\kos-kosan\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#10 D:\XAMPP7\htdocs\kos-kosan\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\XAMPP7\htdocs\kos-kosan\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 D:\XAMPP7\htdocs\kos-kosan\system\Commands\Server\rewrite.php(47): require_once('D:\\XAMPP7\\htdoc...')
+#13 {main}
+CRITICAL - 2023-09-27 11:32:28 --> Column 'nama_kost' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `kost` (`nama_kost`, `alamat`, `rt`, `rw`, `kelurahan`, `link_maps`, `nama_pemilik`, `no_hp`, `jenis_kost`, `harga`) VALUES (:nama_kost:, :alamat:, :rt:, :rw:, :kelurahan:, :link_maps:, :nama_pemilik:, :no_hp:, :jenis_kost:, :harga:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Admin.php(149): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->SimpanDataKamar()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\XAMPP7\\htdocs\\kos-kosan\\public\\index.php')
+INFO - 2023-09-27 11:33:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-09-27 11:33:09 --> mysqli_sql_exception: Column 'harga' cannot be null in D:\XAMPP7\htdocs\kos-kosan\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\XAMPP7\htdocs\kos-kosan\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `ko...', 0)
+#1 D:\XAMPP7\htdocs\kos-kosan\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ko...')
+#2 D:\XAMPP7\htdocs\kos-kosan\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ko...')
+#3 D:\XAMPP7\htdocs\kos-kosan\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ko...', Array, false)
+#4 D:\XAMPP7\htdocs\kos-kosan\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\XAMPP7\htdocs\kos-kosan\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 D:\XAMPP7\htdocs\kos-kosan\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 D:\XAMPP7\htdocs\kos-kosan\app\Controllers\Admin.php(149): CodeIgniter\Model->insert(Array)
+#8 D:\XAMPP7\htdocs\kos-kosan\system\CodeIgniter.php(919): App\Controllers\Admin->SimpanDataKamar()
+#9 D:\XAMPP7\htdocs\kos-kosan\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#10 D:\XAMPP7\htdocs\kos-kosan\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\XAMPP7\htdocs\kos-kosan\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 D:\XAMPP7\htdocs\kos-kosan\system\Commands\Server\rewrite.php(47): require_once('D:\\XAMPP7\\htdoc...')
+#13 {main}
+CRITICAL - 2023-09-27 11:33:09 --> Column 'harga' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `kost` (`nama_kost`, `alamat`, `rt`, `rw`, `kelurahan`, `link_maps`, `nama_pemilik`, `no_hp`, `jenis_kost`, `harga`) VALUES (:nama_kost:, :alamat:, :rt:, :rw:, :kelurahan:, :link_maps:, :nama_pemilik:, :no_hp:, :jenis_kost:, :harga:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Admin.php(149): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->SimpanDataKamar()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\XAMPP7\\htdocs\\kos-kosan\\public\\index.php')
+INFO - 2023-09-27 11:33:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-09-27 11:33:25 --> mysqli_sql_exception: Column 'harga' cannot be null in D:\XAMPP7\htdocs\kos-kosan\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\XAMPP7\htdocs\kos-kosan\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `ko...', 0)
+#1 D:\XAMPP7\htdocs\kos-kosan\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ko...')
+#2 D:\XAMPP7\htdocs\kos-kosan\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ko...')
+#3 D:\XAMPP7\htdocs\kos-kosan\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ko...', Array, false)
+#4 D:\XAMPP7\htdocs\kos-kosan\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\XAMPP7\htdocs\kos-kosan\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 D:\XAMPP7\htdocs\kos-kosan\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 D:\XAMPP7\htdocs\kos-kosan\app\Controllers\Admin.php(149): CodeIgniter\Model->insert(Array)
+#8 D:\XAMPP7\htdocs\kos-kosan\system\CodeIgniter.php(919): App\Controllers\Admin->SimpanDataKamar()
+#9 D:\XAMPP7\htdocs\kos-kosan\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#10 D:\XAMPP7\htdocs\kos-kosan\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\XAMPP7\htdocs\kos-kosan\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 D:\XAMPP7\htdocs\kos-kosan\system\Commands\Server\rewrite.php(47): require_once('D:\\XAMPP7\\htdoc...')
+#13 {main}
+CRITICAL - 2023-09-27 11:33:25 --> Column 'harga' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `kost` (`nama_kost`, `alamat`, `rt`, `rw`, `kelurahan`, `link_maps`, `nama_pemilik`, `no_hp`, `jenis_kost`, `harga`) VALUES (:nama_kost:, :alamat:, :rt:, :rw:, :kelurahan:, :link_maps:, :nama_pemilik:, :no_hp:, :jenis_kost:, :harga:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Admin.php(149): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->SimpanDataKamar()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\XAMPP7\\htdocs\\kos-kosan\\public\\index.php')
+INFO - 2023-09-27 11:34:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-09-27 11:34:15 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`db_kost`.`kost`, CONSTRAINT `kost_ibfk_1` FOREIGN KEY (`id_kamar`) REFERENCES `kamar` (`id_kamar`) ON DELETE CASCADE ON UPDATE CASCADE) in D:\XAMPP7\htdocs\kos-kosan\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\XAMPP7\htdocs\kos-kosan\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `ko...', 0)
+#1 D:\XAMPP7\htdocs\kos-kosan\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ko...')
+#2 D:\XAMPP7\htdocs\kos-kosan\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ko...')
+#3 D:\XAMPP7\htdocs\kos-kosan\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ko...', Array, false)
+#4 D:\XAMPP7\htdocs\kos-kosan\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\XAMPP7\htdocs\kos-kosan\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 D:\XAMPP7\htdocs\kos-kosan\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 D:\XAMPP7\htdocs\kos-kosan\app\Controllers\Admin.php(149): CodeIgniter\Model->insert(Array)
+#8 D:\XAMPP7\htdocs\kos-kosan\system\CodeIgniter.php(919): App\Controllers\Admin->SimpanDataKamar()
+#9 D:\XAMPP7\htdocs\kos-kosan\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#10 D:\XAMPP7\htdocs\kos-kosan\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\XAMPP7\htdocs\kos-kosan\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 D:\XAMPP7\htdocs\kos-kosan\system\Commands\Server\rewrite.php(47): require_once('D:\\XAMPP7\\htdoc...')
+#13 {main}
+CRITICAL - 2023-09-27 11:34:15 --> Cannot add or update a child row: a foreign key constraint fails (`db_kost`.`kost`, CONSTRAINT `kost_ibfk_1` FOREIGN KEY (`id_kamar`) REFERENCES `kamar` (`id_kamar`) ON DELETE CASCADE ON UPDATE CASCADE)
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `kost` (`nama_kost`, `alamat`, `rt`, `rw`, `kelurahan`, `link_maps`, `nama_pemilik`, `no_hp`, `jenis_kost`, `harga`) VALUES (:nama_kost:, :alamat:, :rt:, :rw:, :kelurahan:, :link_maps:, :nama_pemilik:, :no_hp:, :jenis_kost:, :harga:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Admin.php(149): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->SimpanDataKamar()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\XAMPP7\\htdocs\\kos-kosan\\public\\index.php')
+INFO - 2023-09-27 11:35:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 11:35:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 11:35:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 11:37:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 11:37:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 11:38:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 11:38:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 12:16:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 12:18:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 12:18:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 12:19:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 12:21:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-09-27 12:21:13 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`db_kost`.`kost`, CONSTRAINT `kost_ibfk_2` FOREIGN KEY (`id_kamar`) REFERENCES `kamar` (`id_kamar`) ON DELETE CASCADE ON UPDATE CASCADE) in D:\XAMPP7\htdocs\kos-kosan\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\XAMPP7\htdocs\kos-kosan\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `ko...', 0)
+#1 D:\XAMPP7\htdocs\kos-kosan\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ko...')
+#2 D:\XAMPP7\htdocs\kos-kosan\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ko...')
+#3 D:\XAMPP7\htdocs\kos-kosan\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ko...', Array, false)
+#4 D:\XAMPP7\htdocs\kos-kosan\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\XAMPP7\htdocs\kos-kosan\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 D:\XAMPP7\htdocs\kos-kosan\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 D:\XAMPP7\htdocs\kos-kosan\app\Controllers\Admin.php(149): CodeIgniter\Model->insert(Array)
+#8 D:\XAMPP7\htdocs\kos-kosan\system\CodeIgniter.php(919): App\Controllers\Admin->SimpanDataKamar()
+#9 D:\XAMPP7\htdocs\kos-kosan\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#10 D:\XAMPP7\htdocs\kos-kosan\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\XAMPP7\htdocs\kos-kosan\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 D:\XAMPP7\htdocs\kos-kosan\system\Commands\Server\rewrite.php(47): require_once('D:\\XAMPP7\\htdoc...')
+#13 {main}
+CRITICAL - 2023-09-27 12:21:13 --> Cannot add or update a child row: a foreign key constraint fails (`db_kost`.`kost`, CONSTRAINT `kost_ibfk_2` FOREIGN KEY (`id_kamar`) REFERENCES `kamar` (`id_kamar`) ON DELETE CASCADE ON UPDATE CASCADE)
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `kost` (`nama_kost`, `alamat`, `rt`, `rw`, `kelurahan`, `link_maps`, `nama_pemilik`, `no_hp`, `jenis_kost`, `harga`) VALUES (:nama_kost:, :alamat:, :rt:, :rw:, :kelurahan:, :link_maps:, :nama_pemilik:, :no_hp:, :jenis_kost:, :harga:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Admin.php(149): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->SimpanDataKamar()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\XAMPP7\\htdocs\\kos-kosan\\public\\index.php')
+INFO - 2023-09-27 12:22:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-09-27 12:22:03 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`db_kost`.`kost`, CONSTRAINT `kost_ibfk_2` FOREIGN KEY (`id_kamar`) REFERENCES `kamar` (`id_kamar`) ON DELETE CASCADE ON UPDATE CASCADE) in D:\XAMPP7\htdocs\kos-kosan\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\XAMPP7\htdocs\kos-kosan\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `ko...', 0)
+#1 D:\XAMPP7\htdocs\kos-kosan\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ko...')
+#2 D:\XAMPP7\htdocs\kos-kosan\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ko...')
+#3 D:\XAMPP7\htdocs\kos-kosan\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ko...', Array, false)
+#4 D:\XAMPP7\htdocs\kos-kosan\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\XAMPP7\htdocs\kos-kosan\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 D:\XAMPP7\htdocs\kos-kosan\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 D:\XAMPP7\htdocs\kos-kosan\app\Controllers\Admin.php(149): CodeIgniter\Model->insert(Array)
+#8 D:\XAMPP7\htdocs\kos-kosan\system\CodeIgniter.php(919): App\Controllers\Admin->SimpanDataKamar()
+#9 D:\XAMPP7\htdocs\kos-kosan\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#10 D:\XAMPP7\htdocs\kos-kosan\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\XAMPP7\htdocs\kos-kosan\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 D:\XAMPP7\htdocs\kos-kosan\system\Commands\Server\rewrite.php(47): require_once('D:\\XAMPP7\\htdoc...')
+#13 {main}
+CRITICAL - 2023-09-27 12:22:03 --> Cannot add or update a child row: a foreign key constraint fails (`db_kost`.`kost`, CONSTRAINT `kost_ibfk_2` FOREIGN KEY (`id_kamar`) REFERENCES `kamar` (`id_kamar`) ON DELETE CASCADE ON UPDATE CASCADE)
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `kost` (`nama_kost`, `alamat`, `rt`, `rw`, `kelurahan`, `link_maps`, `nama_pemilik`, `no_hp`, `jenis_kost`, `harga`) VALUES (:nama_kost:, :alamat:, :rt:, :rw:, :kelurahan:, :link_maps:, :nama_pemilik:, :no_hp:, :jenis_kost:, :harga:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Admin.php(149): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->SimpanDataKamar()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\XAMPP7\\htdocs\\kos-kosan\\public\\index.php')
+INFO - 2023-09-27 12:22:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-09-27 12:22:26 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`db_kost`.`kost`, CONSTRAINT `kost_ibfk_1` FOREIGN KEY (`id_peraturan`) REFERENCES `peraturan` (`id_peraturan`) ON DELETE CASCADE ON UPDATE CASCADE) in D:\XAMPP7\htdocs\kos-kosan\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\XAMPP7\htdocs\kos-kosan\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `ko...', 0)
+#1 D:\XAMPP7\htdocs\kos-kosan\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ko...')
+#2 D:\XAMPP7\htdocs\kos-kosan\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ko...')
+#3 D:\XAMPP7\htdocs\kos-kosan\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ko...', Array, false)
+#4 D:\XAMPP7\htdocs\kos-kosan\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\XAMPP7\htdocs\kos-kosan\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 D:\XAMPP7\htdocs\kos-kosan\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 D:\XAMPP7\htdocs\kos-kosan\app\Controllers\Admin.php(149): CodeIgniter\Model->insert(Array)
+#8 D:\XAMPP7\htdocs\kos-kosan\system\CodeIgniter.php(919): App\Controllers\Admin->SimpanDataKamar()
+#9 D:\XAMPP7\htdocs\kos-kosan\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#10 D:\XAMPP7\htdocs\kos-kosan\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\XAMPP7\htdocs\kos-kosan\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 D:\XAMPP7\htdocs\kos-kosan\system\Commands\Server\rewrite.php(47): require_once('D:\\XAMPP7\\htdoc...')
+#13 {main}
+CRITICAL - 2023-09-27 12:22:26 --> Cannot add or update a child row: a foreign key constraint fails (`db_kost`.`kost`, CONSTRAINT `kost_ibfk_1` FOREIGN KEY (`id_peraturan`) REFERENCES `peraturan` (`id_peraturan`) ON DELETE CASCADE ON UPDATE CASCADE)
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `kost` (`nama_kost`, `alamat`, `rt`, `rw`, `kelurahan`, `link_maps`, `nama_pemilik`, `no_hp`, `jenis_kost`, `harga`) VALUES (:nama_kost:, :alamat:, :rt:, :rw:, :kelurahan:, :link_maps:, :nama_pemilik:, :no_hp:, :jenis_kost:, :harga:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Admin.php(149): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->SimpanDataKamar()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\XAMPP7\\htdocs\\kos-kosan\\public\\index.php')
+INFO - 2023-09-27 12:23:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 12:23:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 12:40:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 12:43:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 12:43:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 12:44:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-27 12:44:36 --> Class 'App\Controllers\ModelKosan' not found
+in APPPATH\Controllers\Admin.php on line 152.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->SimpanDataKamar()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\XAMPP7\\htdocs\\kos-kosan\\public\\index.php')
+INFO - 2023-09-27 12:45:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 12:45:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 12:51:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 12:51:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 12:51:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 12:51:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 12:51:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 12:52:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 12:52:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 12:53:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 12:54:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 12:55:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-09-27 12:55:05 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`db_kost`.`kost`, CONSTRAINT `kost_ibfk_4` FOREIGN KEY (`id_fasum`) REFERENCES `fasilitas_umum` (`id_fasum`) ON DELETE CASCADE ON UPDATE CASCADE) in D:\XAMPP7\htdocs\kos-kosan\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\XAMPP7\htdocs\kos-kosan\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `ko...', 0)
+#1 D:\XAMPP7\htdocs\kos-kosan\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ko...')
+#2 D:\XAMPP7\htdocs\kos-kosan\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ko...')
+#3 D:\XAMPP7\htdocs\kos-kosan\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ko...', Array, false)
+#4 D:\XAMPP7\htdocs\kos-kosan\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\XAMPP7\htdocs\kos-kosan\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 D:\XAMPP7\htdocs\kos-kosan\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 D:\XAMPP7\htdocs\kos-kosan\app\Controllers\Admin.php(168): CodeIgniter\Model->insert(Array)
+#8 D:\XAMPP7\htdocs\kos-kosan\system\CodeIgniter.php(919): App\Controllers\Admin->SimpanDataKamar()
+#9 D:\XAMPP7\htdocs\kos-kosan\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#10 D:\XAMPP7\htdocs\kos-kosan\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\XAMPP7\htdocs\kos-kosan\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 D:\XAMPP7\htdocs\kos-kosan\system\Commands\Server\rewrite.php(47): require_once('D:\\XAMPP7\\htdoc...')
+#13 {main}
+CRITICAL - 2023-09-27 12:55:05 --> Cannot add or update a child row: a foreign key constraint fails (`db_kost`.`kost`, CONSTRAINT `kost_ibfk_4` FOREIGN KEY (`id_fasum`) REFERENCES `fasilitas_umum` (`id_fasum`) ON DELETE CASCADE ON UPDATE CASCADE)
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `kost` (`nama_kost`, `alamat`, `rt`, `rw`, `kelurahan`, `link_maps`, `nama_pemilik`, `no_hp`, `jenis_kost`, `harga`, `id_kamar`, `id_kamar_mandi`, `id_peraturan`) VALUES (:nama_kost:, :alamat:, :rt:, :rw:, :kelurahan:, :link_maps:, :nama_pemilik:, :no_hp:, :jenis_kost:, :harga:, :id_kamar:, :id_kamar_mandi:, :id_peraturan:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Admin.php(168): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->SimpanDataKamar()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\XAMPP7\\htdocs\\kos-kosan\\public\\index.php')
+INFO - 2023-09-27 13:01:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-09-27 13:01:19 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`db_kost`.`kost`, CONSTRAINT `kost_ibfk_4` FOREIGN KEY (`id_fasum`) REFERENCES `fasilitas_umum` (`id_fasum`) ON DELETE CASCADE ON UPDATE CASCADE) in D:\XAMPP7\htdocs\kos-kosan\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\XAMPP7\htdocs\kos-kosan\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `ko...', 0)
+#1 D:\XAMPP7\htdocs\kos-kosan\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ko...')
+#2 D:\XAMPP7\htdocs\kos-kosan\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ko...')
+#3 D:\XAMPP7\htdocs\kos-kosan\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ko...', Array, false)
+#4 D:\XAMPP7\htdocs\kos-kosan\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\XAMPP7\htdocs\kos-kosan\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 D:\XAMPP7\htdocs\kos-kosan\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 D:\XAMPP7\htdocs\kos-kosan\app\Controllers\Admin.php(168): CodeIgniter\Model->insert(Array)
+#8 D:\XAMPP7\htdocs\kos-kosan\system\CodeIgniter.php(919): App\Controllers\Admin->SimpanDataKamar()
+#9 D:\XAMPP7\htdocs\kos-kosan\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#10 D:\XAMPP7\htdocs\kos-kosan\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\XAMPP7\htdocs\kos-kosan\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 D:\XAMPP7\htdocs\kos-kosan\system\Commands\Server\rewrite.php(47): require_once('D:\\XAMPP7\\htdoc...')
+#13 {main}
+CRITICAL - 2023-09-27 13:01:19 --> Cannot add or update a child row: a foreign key constraint fails (`db_kost`.`kost`, CONSTRAINT `kost_ibfk_4` FOREIGN KEY (`id_fasum`) REFERENCES `fasilitas_umum` (`id_fasum`) ON DELETE CASCADE ON UPDATE CASCADE)
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `kost` (`nama_kost`, `alamat`, `rt`, `rw`, `kelurahan`, `link_maps`, `nama_pemilik`, `no_hp`, `jenis_kost`, `harga`, `id_kamar`, `id_kamar_mandi`, `id_peraturan`) VALUES (:nama_kost:, :alamat:, :rt:, :rw:, :kelurahan:, :link_maps:, :nama_pemilik:, :no_hp:, :jenis_kost:, :harga:, :id_kamar:, :id_kamar_mandi:, :id_peraturan:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Admin.php(168): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->SimpanDataKamar()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\XAMPP7\\htdocs\\kos-kosan\\public\\index.php')
+INFO - 2023-09-27 13:01:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 13:01:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 13:01:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 13:04:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-09-27 13:04:36 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`db_kost`.`kost`, CONSTRAINT `kost_ibfk_4` FOREIGN KEY (`id_fasum`) REFERENCES `fasilitas_umum` (`id_fasum`) ON DELETE CASCADE ON UPDATE CASCADE) in D:\XAMPP7\htdocs\kos-kosan\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\XAMPP7\htdocs\kos-kosan\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `ko...', 0)
+#1 D:\XAMPP7\htdocs\kos-kosan\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ko...')
+#2 D:\XAMPP7\htdocs\kos-kosan\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ko...')
+#3 D:\XAMPP7\htdocs\kos-kosan\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ko...', Array, false)
+#4 D:\XAMPP7\htdocs\kos-kosan\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\XAMPP7\htdocs\kos-kosan\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 D:\XAMPP7\htdocs\kos-kosan\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 D:\XAMPP7\htdocs\kos-kosan\app\Controllers\Admin.php(168): CodeIgniter\Model->insert(Array)
+#8 D:\XAMPP7\htdocs\kos-kosan\system\CodeIgniter.php(919): App\Controllers\Admin->SimpanDataKamar()
+#9 D:\XAMPP7\htdocs\kos-kosan\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#10 D:\XAMPP7\htdocs\kos-kosan\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\XAMPP7\htdocs\kos-kosan\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 D:\XAMPP7\htdocs\kos-kosan\system\Commands\Server\rewrite.php(47): require_once('D:\\XAMPP7\\htdoc...')
+#13 {main}
+CRITICAL - 2023-09-27 13:04:36 --> Cannot add or update a child row: a foreign key constraint fails (`db_kost`.`kost`, CONSTRAINT `kost_ibfk_4` FOREIGN KEY (`id_fasum`) REFERENCES `fasilitas_umum` (`id_fasum`) ON DELETE CASCADE ON UPDATE CASCADE)
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `kost` (`nama_kost`, `alamat`, `rt`, `rw`, `kelurahan`, `link_maps`, `nama_pemilik`, `no_hp`, `jenis_kost`, `harga`, `id_kamar`, `id_kamar_mandi`, `id_peraturan`) VALUES (:nama_kost:, :alamat:, :rt:, :rw:, :kelurahan:, :link_maps:, :nama_pemilik:, :no_hp:, :jenis_kost:, :harga:, :id_kamar:, :id_kamar_mandi:, :id_peraturan:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Admin.php(168): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->SimpanDataKamar()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\XAMPP7\\htdocs\\kos-kosan\\public\\index.php')
+INFO - 2023-09-27 13:05:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 13:08:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 13:09:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-09-27 13:09:39 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`db_kost`.`kost`, CONSTRAINT `kost_ibfk_4` FOREIGN KEY (`id_fasum`) REFERENCES `fasilitas_umum` (`id_fasum`) ON DELETE CASCADE ON UPDATE CASCADE) in D:\XAMPP7\htdocs\kos-kosan\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\XAMPP7\htdocs\kos-kosan\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `ko...', 0)
+#1 D:\XAMPP7\htdocs\kos-kosan\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ko...')
+#2 D:\XAMPP7\htdocs\kos-kosan\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ko...')
+#3 D:\XAMPP7\htdocs\kos-kosan\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ko...', Array, false)
+#4 D:\XAMPP7\htdocs\kos-kosan\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\XAMPP7\htdocs\kos-kosan\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 D:\XAMPP7\htdocs\kos-kosan\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 D:\XAMPP7\htdocs\kos-kosan\app\Controllers\Admin.php(168): CodeIgniter\Model->insert(Array)
+#8 D:\XAMPP7\htdocs\kos-kosan\system\CodeIgniter.php(919): App\Controllers\Admin->SimpanDataKamar()
+#9 D:\XAMPP7\htdocs\kos-kosan\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#10 D:\XAMPP7\htdocs\kos-kosan\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\XAMPP7\htdocs\kos-kosan\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 D:\XAMPP7\htdocs\kos-kosan\system\Commands\Server\rewrite.php(47): require_once('D:\\XAMPP7\\htdoc...')
+#13 {main}
+CRITICAL - 2023-09-27 13:09:39 --> Cannot add or update a child row: a foreign key constraint fails (`db_kost`.`kost`, CONSTRAINT `kost_ibfk_4` FOREIGN KEY (`id_fasum`) REFERENCES `fasilitas_umum` (`id_fasum`) ON DELETE CASCADE ON UPDATE CASCADE)
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `kost` (`nama_kost`, `alamat`, `rt`, `rw`, `kelurahan`, `link_maps`, `nama_pemilik`, `no_hp`, `jenis_kost`, `harga`, `id_kamar`, `id_kamar_mandi`, `id_peraturan`) VALUES (:nama_kost:, :alamat:, :rt:, :rw:, :kelurahan:, :link_maps:, :nama_pemilik:, :no_hp:, :jenis_kost:, :harga:, :id_kamar:, :id_kamar_mandi:, :id_peraturan:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Admin.php(168): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->SimpanDataKamar()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\XAMPP7\\htdocs\\kos-kosan\\public\\index.php')
+INFO - 2023-09-27 13:18:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-09-27 13:18:41 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`db_kost`.`kost`, CONSTRAINT `kost_ibfk_4` FOREIGN KEY (`id_fasum`) REFERENCES `fasilitas_umum` (`id_fasum`) ON DELETE CASCADE ON UPDATE CASCADE) in D:\XAMPP7\htdocs\kos-kosan\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\XAMPP7\htdocs\kos-kosan\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `ko...', 0)
+#1 D:\XAMPP7\htdocs\kos-kosan\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ko...')
+#2 D:\XAMPP7\htdocs\kos-kosan\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ko...')
+#3 D:\XAMPP7\htdocs\kos-kosan\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ko...', Array, false)
+#4 D:\XAMPP7\htdocs\kos-kosan\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\XAMPP7\htdocs\kos-kosan\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 D:\XAMPP7\htdocs\kos-kosan\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 D:\XAMPP7\htdocs\kos-kosan\app\Controllers\Admin.php(168): CodeIgniter\Model->insert(Array)
+#8 D:\XAMPP7\htdocs\kos-kosan\system\CodeIgniter.php(919): App\Controllers\Admin->SimpanDataKamar()
+#9 D:\XAMPP7\htdocs\kos-kosan\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#10 D:\XAMPP7\htdocs\kos-kosan\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\XAMPP7\htdocs\kos-kosan\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 D:\XAMPP7\htdocs\kos-kosan\system\Commands\Server\rewrite.php(47): require_once('D:\\XAMPP7\\htdoc...')
+#13 {main}
+CRITICAL - 2023-09-27 13:18:41 --> Cannot add or update a child row: a foreign key constraint fails (`db_kost`.`kost`, CONSTRAINT `kost_ibfk_4` FOREIGN KEY (`id_fasum`) REFERENCES `fasilitas_umum` (`id_fasum`) ON DELETE CASCADE ON UPDATE CASCADE)
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `kost` (`nama_kost`, `alamat`, `rt`, `rw`, `kelurahan`, `link_maps`, `nama_pemilik`, `no_hp`, `jenis_kost`, `harga`, `id_kamar`, `id_kamar_mandi`, `id_peraturan`) VALUES (:nama_kost:, :alamat:, :rt:, :rw:, :kelurahan:, :link_maps:, :nama_pemilik:, :no_hp:, :jenis_kost:, :harga:, :id_kamar:, :id_kamar_mandi:, :id_peraturan:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Admin.php(168): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->SimpanDataKamar()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\XAMPP7\\htdocs\\kos-kosan\\public\\index.php')
+INFO - 2023-09-27 13:28:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 13:29:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 13:30:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-09-27 13:30:03 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`db_kost`.`kost`, CONSTRAINT `kost_ibfk_4` FOREIGN KEY (`id_fasum`) REFERENCES `fasilitas_umum` (`id_fasum`) ON DELETE CASCADE ON UPDATE CASCADE) in D:\XAMPP7\htdocs\kos-kosan\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\XAMPP7\htdocs\kos-kosan\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `ko...', 0)
+#1 D:\XAMPP7\htdocs\kos-kosan\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ko...')
+#2 D:\XAMPP7\htdocs\kos-kosan\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ko...')
+#3 D:\XAMPP7\htdocs\kos-kosan\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ko...', Array, false)
+#4 D:\XAMPP7\htdocs\kos-kosan\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\XAMPP7\htdocs\kos-kosan\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 D:\XAMPP7\htdocs\kos-kosan\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 D:\XAMPP7\htdocs\kos-kosan\app\Controllers\Admin.php(168): CodeIgniter\Model->insert(Array)
+#8 D:\XAMPP7\htdocs\kos-kosan\system\CodeIgniter.php(919): App\Controllers\Admin->SimpanDataKamar()
+#9 D:\XAMPP7\htdocs\kos-kosan\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#10 D:\XAMPP7\htdocs\kos-kosan\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\XAMPP7\htdocs\kos-kosan\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 D:\XAMPP7\htdocs\kos-kosan\system\Commands\Server\rewrite.php(47): require_once('D:\\XAMPP7\\htdoc...')
+#13 {main}
+CRITICAL - 2023-09-27 13:30:03 --> Cannot add or update a child row: a foreign key constraint fails (`db_kost`.`kost`, CONSTRAINT `kost_ibfk_4` FOREIGN KEY (`id_fasum`) REFERENCES `fasilitas_umum` (`id_fasum`) ON DELETE CASCADE ON UPDATE CASCADE)
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `kost` (`nama_kost`, `alamat`, `rt`, `rw`, `kelurahan`, `link_maps`, `nama_pemilik`, `no_hp`, `jenis_kost`, `harga`, `id_kamar`, `id_kamar_mandi`, `id_peraturan`) VALUES (:nama_kost:, :alamat:, :rt:, :rw:, :kelurahan:, :link_maps:, :nama_pemilik:, :no_hp:, :jenis_kost:, :harga:, :id_kamar:, :id_kamar_mandi:, :id_peraturan:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Admin.php(168): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->SimpanDataKamar()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\XAMPP7\\htdocs\\kos-kosan\\public\\index.php')
+INFO - 2023-09-27 13:38:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 13:38:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 13:39:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-27 13:39:40 --> Call to a member function insert() on array
+in APPPATH\Controllers\Admin.php on line 113.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->SimpanDataKamar()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\XAMPP7\\htdocs\\kos-kosan\\public\\index.php')
+INFO - 2023-09-27 13:40:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-27 13:40:41 --> Call to a member function insert() on array
+in APPPATH\Controllers\Admin.php on line 113.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->SimpanDataKamar()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\XAMPP7\\htdocs\\kos-kosan\\public\\index.php')
+INFO - 2023-09-27 13:41:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-09-27 13:41:25 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`db_kost`.`kost`, CONSTRAINT `kost_ibfk_4` FOREIGN KEY (`id_fasum`) REFERENCES `fasilitas_umum` (`id_fasum`) ON DELETE CASCADE ON UPDATE CASCADE) in D:\XAMPP7\htdocs\kos-kosan\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\XAMPP7\htdocs\kos-kosan\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `ko...', 0)
+#1 D:\XAMPP7\htdocs\kos-kosan\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ko...')
+#2 D:\XAMPP7\htdocs\kos-kosan\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ko...')
+#3 D:\XAMPP7\htdocs\kos-kosan\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ko...', Array, false)
+#4 D:\XAMPP7\htdocs\kos-kosan\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\XAMPP7\htdocs\kos-kosan\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 D:\XAMPP7\htdocs\kos-kosan\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 D:\XAMPP7\htdocs\kos-kosan\app\Controllers\Admin.php(115): CodeIgniter\Model->insert(Array)
+#8 D:\XAMPP7\htdocs\kos-kosan\system\CodeIgniter.php(919): App\Controllers\Admin->SimpanDataKamar()
+#9 D:\XAMPP7\htdocs\kos-kosan\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#10 D:\XAMPP7\htdocs\kos-kosan\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\XAMPP7\htdocs\kos-kosan\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 D:\XAMPP7\htdocs\kos-kosan\system\Commands\Server\rewrite.php(47): require_once('D:\\XAMPP7\\htdoc...')
+#13 {main}
+CRITICAL - 2023-09-27 13:41:25 --> Cannot add or update a child row: a foreign key constraint fails (`db_kost`.`kost`, CONSTRAINT `kost_ibfk_4` FOREIGN KEY (`id_fasum`) REFERENCES `fasilitas_umum` (`id_fasum`) ON DELETE CASCADE ON UPDATE CASCADE)
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `kost` (`nama_kost`, `alamat`, `rt`, `rw`, `kelurahan`, `link_maps`, `nama_pemilik`, `no_hp`, `jenis_kost`, `harga`) VALUES (:nama_kost:, :alamat:, :rt:, :rw:, :kelurahan:, :link_maps:, :nama_pemilik:, :no_hp:, :jenis_kost:, :harga:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Admin.php(115): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->SimpanDataKamar()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\XAMPP7\\htdocs\\kos-kosan\\public\\index.php')
+INFO - 2023-09-27 13:42:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-09-27 13:42:12 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`db_kost`.`kost`, CONSTRAINT `kost_ibfk_4` FOREIGN KEY (`id_fasum`) REFERENCES `fasilitas_umum` (`id_fasum`) ON DELETE CASCADE ON UPDATE CASCADE) in D:\XAMPP7\htdocs\kos-kosan\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\XAMPP7\htdocs\kos-kosan\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `ko...', 0)
+#1 D:\XAMPP7\htdocs\kos-kosan\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ko...')
+#2 D:\XAMPP7\htdocs\kos-kosan\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ko...')
+#3 D:\XAMPP7\htdocs\kos-kosan\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ko...', Array, false)
+#4 D:\XAMPP7\htdocs\kos-kosan\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\XAMPP7\htdocs\kos-kosan\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 D:\XAMPP7\htdocs\kos-kosan\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 D:\XAMPP7\htdocs\kos-kosan\app\Controllers\Admin.php(115): CodeIgniter\Model->insert(Array)
+#8 D:\XAMPP7\htdocs\kos-kosan\system\CodeIgniter.php(919): App\Controllers\Admin->SimpanDataKamar()
+#9 D:\XAMPP7\htdocs\kos-kosan\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#10 D:\XAMPP7\htdocs\kos-kosan\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\XAMPP7\htdocs\kos-kosan\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 D:\XAMPP7\htdocs\kos-kosan\system\Commands\Server\rewrite.php(47): require_once('D:\\XAMPP7\\htdoc...')
+#13 {main}
+CRITICAL - 2023-09-27 13:42:12 --> Cannot add or update a child row: a foreign key constraint fails (`db_kost`.`kost`, CONSTRAINT `kost_ibfk_4` FOREIGN KEY (`id_fasum`) REFERENCES `fasilitas_umum` (`id_fasum`) ON DELETE CASCADE ON UPDATE CASCADE)
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `kost` (`nama_kost`, `alamat`, `rt`, `rw`, `kelurahan`, `link_maps`, `nama_pemilik`, `no_hp`, `jenis_kost`, `harga`) VALUES (:nama_kost:, :alamat:, :rt:, :rw:, :kelurahan:, :link_maps:, :nama_pemilik:, :no_hp:, :jenis_kost:, :harga:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Admin.php(115): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->SimpanDataKamar()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\XAMPP7\\htdocs\\kos-kosan\\public\\index.php')
+INFO - 2023-09-27 13:42:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 13:42:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 13:56:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 13:56:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 13:57:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 13:57:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 13:58:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 14:01:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 14:01:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 14:01:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 14:01:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 14:06:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 14:06:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 14:06:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 14:10:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 14:10:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 14:10:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 14:11:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 14:11:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 14:11:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 14:14:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 14:14:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 14:15:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 14:16:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 14:16:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 14:18:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 14:18:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 14:18:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 14:19:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 14:19:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 14:19:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 14:23:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 14:23:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 14:23:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 14:23:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 14:24:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 14:24:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 14:24:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 14:24:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 14:24:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 14:31:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 14:31:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 14:31:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 14:42:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 14:42:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 14:42:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 14:51:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 14:51:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 14:51:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 14:51:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 14:51:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 14:51:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 14:52:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 14:52:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 14:52:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 14:52:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 14:52:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 14:52:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 14:52:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 14:52:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 14:52:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 14:52:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 14:52:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 14:56:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 14:56:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 14:56:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 15:07:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 15:07:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 15:07:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 15:09:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 15:09:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 15:09:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 15:39:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 15:41:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-27 15:41:23 --> Cannot use object of type stdClass as array
+in APPPATH\Views\admin\v_data_kamar.php on line 34.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('admin/v_data_kamar', [], true)
+ 4 APPPATH\Views\admin\v_temp_admin.php(93): view('admin/v_data_kamar')
+ 5 SYSTEMPATH\View\View.php(226): include('D:\\XAMPP7\\htdocs\\kos-kosan\\app\\Views\\admin\\v_temp_admin.php')
+ 6 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('admin/v_temp_admin', [], true)
+ 8 APPPATH\Controllers\Admin.php(50): view('admin/v_temp_admin', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->DataKamar()
+10 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+11 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\XAMPP7\\htdocs\\kos-kosan\\public\\index.php')
+INFO - 2023-09-27 15:42:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-27 15:42:11 --> Cannot use object of type stdClass as array
+in APPPATH\Views\admin\v_data_kamar.php on line 34.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('admin/v_data_kamar', [], true)
+ 4 APPPATH\Views\admin\v_temp_admin.php(93): view('admin/v_data_kamar')
+ 5 SYSTEMPATH\View\View.php(226): include('D:\\XAMPP7\\htdocs\\kos-kosan\\app\\Views\\admin\\v_temp_admin.php')
+ 6 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('admin/v_temp_admin', [], true)
+ 8 APPPATH\Controllers\Admin.php(50): view('admin/v_temp_admin', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->DataKamar()
+10 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+11 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\XAMPP7\\htdocs\\kos-kosan\\public\\index.php')
+INFO - 2023-09-27 15:42:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-27 15:42:17 --> Cannot use object of type stdClass as array
+in APPPATH\Views\admin\v_data_kamar.php on line 34.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('admin/v_data_kamar', [], true)
+ 4 APPPATH\Views\admin\v_temp_admin.php(93): view('admin/v_data_kamar')
+ 5 SYSTEMPATH\View\View.php(226): include('D:\\XAMPP7\\htdocs\\kos-kosan\\app\\Views\\admin\\v_temp_admin.php')
+ 6 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('admin/v_temp_admin', [], true)
+ 8 APPPATH\Controllers\Admin.php(50): view('admin/v_temp_admin', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->DataKamar()
+10 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+11 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\XAMPP7\\htdocs\\kos-kosan\\public\\index.php')
+INFO - 2023-09-27 15:42:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-27 15:42:30 --> Cannot use object of type stdClass as array
+in APPPATH\Views\admin\v_data_kamar.php on line 34.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('admin/v_data_kamar', [], true)
+ 4 APPPATH\Views\admin\v_temp_admin.php(93): view('admin/v_data_kamar')
+ 5 SYSTEMPATH\View\View.php(226): include('D:\\XAMPP7\\htdocs\\kos-kosan\\app\\Views\\admin\\v_temp_admin.php')
+ 6 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('admin/v_temp_admin', [], true)
+ 8 APPPATH\Controllers\Admin.php(50): view('admin/v_temp_admin', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->DataKamar()
+10 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+11 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\XAMPP7\\htdocs\\kos-kosan\\public\\index.php')
+INFO - 2023-09-27 15:42:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-27 15:42:32 --> Cannot use object of type stdClass as array
+in APPPATH\Views\admin\v_data_kamar.php on line 34.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('admin/v_data_kamar', [], true)
+ 4 APPPATH\Views\admin\v_temp_admin.php(93): view('admin/v_data_kamar')
+ 5 SYSTEMPATH\View\View.php(226): include('D:\\XAMPP7\\htdocs\\kos-kosan\\app\\Views\\admin\\v_temp_admin.php')
+ 6 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('admin/v_temp_admin', [], true)
+ 8 APPPATH\Controllers\Admin.php(50): view('admin/v_temp_admin', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->DataKamar()
+10 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+11 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\XAMPP7\\htdocs\\kos-kosan\\public\\index.php')
+INFO - 2023-09-27 15:42:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-27 15:42:52 --> Cannot use object of type stdClass as array
+in APPPATH\Views\admin\v_data_kamar.php on line 34.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('admin/v_data_kamar', [], true)
+ 4 APPPATH\Views\admin\v_temp_admin.php(93): view('admin/v_data_kamar')
+ 5 SYSTEMPATH\View\View.php(226): include('D:\\XAMPP7\\htdocs\\kos-kosan\\app\\Views\\admin\\v_temp_admin.php')
+ 6 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('admin/v_temp_admin', [], true)
+ 8 APPPATH\Controllers\Admin.php(50): view('admin/v_temp_admin', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->DataKamar()
+10 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+11 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\XAMPP7\\htdocs\\kos-kosan\\public\\index.php')
+INFO - 2023-09-27 15:43:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-27 15:43:49 --> Cannot use object of type stdClass as array
+in APPPATH\Views\admin\v_data_kamar.php on line 34.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('admin/v_data_kamar', [], true)
+ 4 APPPATH\Views\admin\v_temp_admin.php(93): view('admin/v_data_kamar')
+ 5 SYSTEMPATH\View\View.php(226): include('D:\\XAMPP7\\htdocs\\kos-kosan\\app\\Views\\admin\\v_temp_admin.php')
+ 6 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('admin/v_temp_admin', [], true)
+ 8 APPPATH\Controllers\Admin.php(55): view('admin/v_temp_admin', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->DataKamar()
+10 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+11 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\XAMPP7\\htdocs\\kos-kosan\\public\\index.php')
+INFO - 2023-09-27 15:43:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-27 15:43:50 --> Cannot use object of type stdClass as array
+in APPPATH\Views\admin\v_data_kamar.php on line 34.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('admin/v_data_kamar', [], true)
+ 4 APPPATH\Views\admin\v_temp_admin.php(93): view('admin/v_data_kamar')
+ 5 SYSTEMPATH\View\View.php(226): include('D:\\XAMPP7\\htdocs\\kos-kosan\\app\\Views\\admin\\v_temp_admin.php')
+ 6 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('admin/v_temp_admin', [], true)
+ 8 APPPATH\Controllers\Admin.php(55): view('admin/v_temp_admin', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->DataKamar()
+10 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+11 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\XAMPP7\\htdocs\\kos-kosan\\public\\index.php')
+INFO - 2023-09-27 15:44:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 15:45:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-27 15:45:48 --> Cannot use object of type stdClass as array
+in APPPATH\Views\admin\v_data_kamar.php on line 34.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('admin/v_data_kamar', [], true)
+ 4 APPPATH\Views\admin\v_temp_admin.php(93): view('admin/v_data_kamar')
+ 5 SYSTEMPATH\View\View.php(226): include('D:\\XAMPP7\\htdocs\\kos-kosan\\app\\Views\\admin\\v_temp_admin.php')
+ 6 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('admin/v_temp_admin', [], true)
+ 8 APPPATH\Controllers\Admin.php(50): view('admin/v_temp_admin', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->DataKamar()
+10 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+11 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\XAMPP7\\htdocs\\kos-kosan\\public\\index.php')
+INFO - 2023-09-27 15:47:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 15:47:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 15:49:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 15:49:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 15:49:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 15:52:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 15:52:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 15:53:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 15:53:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 15:54:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 15:58:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 15:59:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 16:00:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 16:00:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 16:02:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 16:09:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-27 16:09:36 --> Class 'App\Models\ModelKosan' not found
+in APPPATH\Controllers\Home.php on line 11.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\XAMPP7\\htdocs\\kos-kosan\\public\\index.php')
+CRITICAL - 2023-09-27 16:10:08 --> Undefined index: id_kosan
+in APPPATH\Views\v_temp_home.php on line 136.
+ 1 APPPATH\Views\v_temp_home.php(136): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: id_kosan', 'D:\\XAMPP7\\htdocs\\kos-kosan\\app\\Views\\v_temp_home.php', 136, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\XAMPP7\\htdocs\\kos-kosan\\app\\Views\\v_temp_home.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('v_temp_home', [], true)
+ 5 APPPATH\Controllers\Home.php(24): view('v_temp_home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\XAMPP7\\htdocs\\kos-kosan\\public\\index.php')
+CRITICAL - 2023-09-27 16:10:52 --> Cannot use object of type stdClass as array
+in APPPATH\Views\v_temp_home.php on line 136.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('v_temp_home', [], true)
+ 4 APPPATH\Controllers\Home.php(23): view('v_temp_home', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->index()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\XAMPP7\\htdocs\\kos-kosan\\public\\index.php')
+CRITICAL - 2023-09-27 16:12:02 --> Cannot use object of type stdClass as array
+in APPPATH\Views\v_temp_home.php on line 138.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('v_temp_home', [], true)
+ 4 APPPATH\Controllers\Home.php(23): view('v_temp_home', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->index()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\XAMPP7\\htdocs\\kos-kosan\\public\\index.php')
+CRITICAL - 2023-09-27 16:12:12 --> Cannot use object of type stdClass as array
+in APPPATH\Views\v_temp_home.php on line 143.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('v_temp_home', [], true)
+ 4 APPPATH\Controllers\Home.php(23): view('v_temp_home', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->index()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\XAMPP7\\htdocs\\kos-kosan\\public\\index.php')
+CRITICAL - 2023-09-27 16:12:21 --> Cannot use object of type stdClass as array
+in APPPATH\Views\v_temp_home.php on line 143.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('v_temp_home', [], true)
+ 4 APPPATH\Controllers\Home.php(23): view('v_temp_home', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->index()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\XAMPP7\\htdocs\\kos-kosan\\public\\index.php')
+INFO - 2023-09-27 16:14:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 16:14:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 16:14:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-27 16:27:19 --> Undefined index: nama_kosan
+in APPPATH\Views\v_detail.php on line 12.
+ 1 APPPATH\Views\v_detail.php(12): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: nama_kosan', 'D:\\XAMPP7\\htdocs\\kos-kosan\\app\\Views\\v_detail.php', 12, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\XAMPP7\\htdocs\\kos-kosan\\app\\Views\\v_detail.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('/v_detail', [], true)
+ 5 APPPATH\Controllers\Home.php(51): view('/v_detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->DetailKamar('3')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\XAMPP7\\htdocs\\kos-kosan\\public\\index.php')
