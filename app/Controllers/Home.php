@@ -22,32 +22,35 @@ class Home extends BaseController
         ];
         return view('v_temp_home', $data);
     }
-    public function detail(): string
-    {
-        $model = new ModelKost();
 
-        $kamar = $model->findAll();
-        $data = [
-            'judul' => 'Detail',
-            'navigasi' => 'v_nav_2',
-            'footer' => 'v_footer',
-            'kamar' => $kamar,
-        ];
-        return view('v_detail', $data);
-    }
     public function DetailKamar($id_kosan)
     {
         $model = new ModelKost();
 
+        // Lakukan join dengan model-model lainnya berdasarkan kolom yang sesuai
+        $model->select('*');
+        $model->join('kamar', 'kamar.id_kamar = kost.id_kamar');
+        $model->join('kamar_mandi', 'kamar_mandi.id_kamar_mandi = kost.id_kamar_mandi');
+        $model->join('peraturan', 'peraturan.id_peraturan = kost.id_peraturan');
+        $model->join('fasilitas_umum', 'fasilitas_umum.id_fasum = kost.id_fasum');
+        $model->join('fasilitas_parkir', 'fasilitas_parkir.id_fparkir = kost.id_fparkir');
+
         // Ambil data kosan berdasarkan $id_kosan
         $data['value'] = $model->find($id_kosan);
-        $data['judul'] = 'Detail';
-        $data['subjudul'] = 'EditDataKamar';
+
+        if (!$data['value']) {
+            // Tampilkan halaman error jika data tidak ditemukan
+            return view('error_page');
+        }
+
+        // Data untuk tampilan
+        $data['judul'] = 'Detail Kamar';
+        $data['subjudul'] = 'Edit Data Kamar';
         $data['navigasi'] = 'v_nav_2';
         $data['footer'] = 'v_footer';
         $data['page'] = 'admin/v_edit_data_kamar';
 
         // Memuat view form edit kosan
-        return view('/v_detail', $data);
+        return view('v_detail', $data);
     }
 }

@@ -15,7 +15,7 @@
                                 <thead>
                                     <tr>
                                         <th width="1%">No</th>
-                                        <th class="text-nowrap">Nama Kamar</th>
+                                        <th class="text-nowrap">Nama Kost</th>
                                         <th class="text-nowrap">Alamat Kamar</th>
                                         <th class="text-nowrap">Nama Pemilik</th>
                                         <th class="text-nowrap">No HP</th>
@@ -59,11 +59,14 @@
 
                                         </td>
                                         <td class="text-center">
-                                            <a href="" class="btn btn-info btn-sm"><i class="feather icon-eye">Show</i></a>
-                                            <a href="" class="btn btn-warning btn-sm"><i class="feather icon-edit">
+                                            <a href="<?= base_url('detail/' . $value->id_kost) ?>" target="_blank"
+                                                class="btn btn-info btn-sm"><i class="feather icon-eye"></i>Show</a>
+
+                                            <a href="<?= base_url('editdatakamar/' . $value->id_kost) ?>"
+                                                class="btn btn-warning btn-sm"><i class="feather icon-edit">
                                                     Edit</i></a>
-                                            <a href="" class="btn btn-danger btn-sm"><i
-                                                    class="feather icon-trash">Hapus</i></a>
+                                            <a href="<?= base_url('hapusdatakamar/' . $value->id_kost) ?>"
+                                                class="btn btn-danger btn-sm"><i class="feather icon-trash">Hapus</i></a>
                                         </td>
                                     </tr>
                                 <?php endforeach; ?>

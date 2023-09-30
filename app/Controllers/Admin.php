@@ -159,51 +159,123 @@ class Admin extends BaseController
     {
         $model = new ModelKost();
 
+        // Lakukan join dengan model-model lainnya berdasarkan kolom yang sesuai
+        $model->select('*');
+        $model->join('kamar', 'kamar.id_kamar = kost.id_kamar');
+        $model->join('kamar_mandi', 'kamar_mandi.id_kamar_mandi = kost.id_kamar_mandi');
+        $model->join('peraturan', 'peraturan.id_peraturan = kost.id_peraturan');
+        $model->join('fasilitas_umum', 'fasilitas_umum.id_fasum = kost.id_fasum');
+        $model->join('fasilitas_parkir', 'fasilitas_parkir.id_fparkir = kost.id_fparkir');
+
         // Ambil data kosan berdasarkan $id_kosan
         $data['value'] = $model->find($id_kosan);
+
+        // Jika Anda ingin mengambil data dari tabel terkait
+        $data['kamar_data'] = $model->findAll();
+
         $data['judul'] = 'Kamar';
         $data['subjudul'] = 'EditDataKamar';
         $data['navigasi'] = 'admin/v_navigasi_admin';
         $data['sidebar'] = 'admin/v_sidebar_admin';
         $data['page'] = 'admin/v_edit_data_kamar';
-
+        // var_dump($data);
+        // die;
         // Memuat view form edit kosan
         return view('/admin/v_temp_admin', $data);
     }
     public function UpdateKosan($id_kosan)
     {
-        $userModel = new ModelKost();
+        $model = new ModelKost();
 
-        $foto = $this->request->getFile('foto');
-        $namafoto = $foto->getRandomName();
+        // Lakukan join dengan model-model lainnya berdasarkan kolom yang sesuai
+        $model->select('*');
+        $model->join('kamar', 'kamar.id_kamar = kost.id_kamar');
+        $model->join('kamar_mandi', 'kamar_mandi.id_kamar_mandi = kost.id_kamar_mandi');
+        $model->join('peraturan', 'peraturan.id_peraturan = kost.id_peraturan');
+        $model->join('fasilitas_umum', 'fasilitas_umum.id_fasum = kost.id_fasum');
+        $model->join('fasilitas_parkir', 'fasilitas_parkir.id_fparkir = kost.id_fparkir');
+
+        // Ambil data kosan berdasarkan $id_kosan
+        $dataKost = $model->find($id_kosan);
+
+        if (!$dataKost) {
+            // Tampilkan pesan kesalahan jika data tidak ditemukan
+            return redirect()->to('/error-page')->with('error', 'Data not found.');
+        }
 
 
-        // Update data user berdasarkan id_kosan
-        $data = [
-            'nama_kosan' => $this->request->getPost('nama_kamar'),
-            'kategori_kosan' => $this->request->getPost('kategori'),
-            'jenis_kosan' => $this->request->getPost('jenis_kamar'),
-            'luas_kosan' => $this->request->getPost('luas_kamar'),
-            'biaya_kosan' => $this->request->getPost('harga_kamar'),
-            'alamat_kosan' => $this->request->getPost('alamat'),
-            'deskripsi' => $this->request->getPost('desc'),
-            'foto_kosan' => $namafoto,
-            // Ganti 'devisi' menjadi 'id_devisi'
+        $dataToUpdate = [
+            'nama_kost' => $this->request->getPost('nama_kost'),
+            'alamat' => $this->request->getPost('alamat'),
+            'rt' => $this->request->getPost('rt'),
+            'rw' => $this->request->getPost('rw'),
+            'kelurahan' => $this->request->getPost('kelurahan'),
+            'kecamatan' => $this->request->getPost('kecamatan'),
+            'link_maps' => $this->request->getPost('link_maps'),
+            'nama_pemilik' => $this->request->getPost('nama_pemilik'),
+            'no_hp' => $this->request->getPost('no_hp'),
+            'jenis_kost' => $this->request->getPost('jenis_kost'),
+            'harga' => $this->request->getPost('harga'),
+            'jarak_ubsi' => $this->request->getPost('jarak_ubsi'),
+            'deskripsi_tambahan' => $this->request->getPost('deskripsi_tambahan'),
+
+
+            'ukuran' => $this->request->getPost('ukuran'),
+            'kasur' => $this->request->getPost('kasur'),
+            'meja' => $this->request->getPost('meja'),
+            'bantal' => $this->request->getPost('bantal'),
+            'lemari_baju' => $this->request->getPost('lemari_baju'),
+            'kursi' => $this->request->getPost('kursi'),
+            'ventilasi' => $this->request->getPost('ventilasi'),
+            'jendela' => $this->request->getPost('jendela'),
+            'ac' => $this->request->getPost('ac'),
+            'listrik' => $this->request->getPost('listrik'),
+
+
+
+            'tamu' => $this->request->getPost('tamu'),
+            'penghuni' => $this->request->getPost('penghuni'),
+            'pasutri' => $this->request->getPost('pasutri'),
+            'bawa_anak' => $this->request->getPost('bawa_anak'),
+            'akses' => $this->request->getPost('akses'),
+
+            'ruang_tamu' => $this->request->getPost('ruang_tamu'),
+            'ruang_cuci' => $this->request->getPost('ruang_cuci'),
+            'ruang_jemur' => $this->request->getPost('ruang_jemur'),
+            'ruang_keluarga' => $this->request->getPost('ruang_keluarga'),
+            'ruang_makan' => $this->request->getPost('ruang_makan'),
+            'ruang_santai' => $this->request->getPost('ruang_santai'),
+            'dapur' => $this->request->getPost('dapur'),
+            'kulkas' => $this->request->getPost('kulkas'),
+
+            'parkir_mobil' => $this->request->getPost('parkir_mobil'),
+            'parkir_motor' => $this->request->getPost('parkir_motor'),
+            'parkir_sepeda' => $this->request->getPost('parkir_sepeda'),
+
         ];
+        $foto1 = $this->request->getFile('foto_kost');
+        $foto2 = $this->request->getFile('foto_kamar');
+        $namafoto1 = $foto1->getRandomName();
+        $namafoto2 = $foto2->getRandomName();
+        $foto1->move('foto', $namafoto1);
+        $foto2->move('foto', $namafoto2);
 
-        // Cek apakah password dikosongkan pada form, jika tidak kosong, update password
-        $userModel->update($id_kosan, $data);
-        $foto->move('foto', $namafoto);
+        // Set data foto ke array dataToUpdate
+        $dataToUpdate['foto_kost'] = $namafoto1;
+        $dataToUpdate['foto_kamar'] = $namafoto2;
+
+        // Lakukan update data menggunakan model
+        $model->update($id_kosan, $dataToUpdate);
 
         // Redirect kembali ke halaman list user level 2 dengan notifikasi
         return redirect()->to('/datakamar')->with('success', '');
     }
     public function HapusKosan($id_kosan)
     {
-        $divisionModel = new ModelKost();
+        $model = new ModelKost();
 
         // Hapus divisi berdasarkan id_$id_kosan
-        $divisionModel->delete($id_kosan);
+        $model->delete($id_kosan);
 
         // Redirect kembali ke halaman list divisi dengan notifikasi
         return redirect()->to('/datakamar')->with('success', '');

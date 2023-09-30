@@ -27,17 +27,15 @@
                                     data-toggle="tooltip" data-placement="top" title="Booking Kamar"></i>
                                 Rekomendasi</a>
                         </li>
-                        <li class="mr-2 d-none d-xl-block">
-                            <a href="#syarat-ketentuan" style="color: black"><i class="feather icon-book"
-                                    data-toggle="tooltip" data-placement="top" title="Booking Kamar"></i> Syarat &
-                                Ketentuan</a>
-                        </li>
+
                     </ul>
                 </div>
                 <ul class="nav navbar-nav float-right">
                     <li class="nav-item">
-                        <a class="mr-2 nav-link nav-link-label" href="https://wa.me/6289607765169">
-                            <i class="feather icon-phone"></i> <span class=" mr-2">Hubungi Kami</span></a>
+                        <a class="mr-2 nav-link nav-link-label" href="https://wa.me/6289607765169" target="_blank">
+                            <i class="feather icon-phone"></i> <span class="mr-2">Hubungi Kami</span>
+                        </a>
+
                     </li>
                 </ul>
             </div>

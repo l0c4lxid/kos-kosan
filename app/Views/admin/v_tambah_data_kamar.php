@@ -11,7 +11,7 @@
                             <div class="form-body ">
                                 <div class="row">
                                     <div class="col-sm-12">
-                                        <label class="col-form-label">Nama Kamar</label>
+                                        <label class="col-form-label">Nama Kost</label>
                                         <input type="text" class="form-control " name="nama_kost"
                                             placeholder="Nama Kost">
                                     </div>

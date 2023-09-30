@@ -16,9 +16,14 @@
                     <ul class="nav navbar-nav ">
 
                         <li class="mr-2 d-none d-xl-block">
-                            <a href="#syarat-ketentuan" style="color: black"><i class="feather icon-book"
-                                    data-toggle="tooltip" data-placement="top" title="Booking Kamar"></i> Syarat &
-                                Ketentuan</a>
+                            <a href="/" style="font-size: 15px;"><i class="feather icon-home"></i> Home ></a>
+                            <a href="#" style="font-size: 15px;">
+                                <?= $value['nama_kost'] ?>
+                            </a>
+                            <a href="#" style="font-size: 15px;">
+                                |
+                                <?= $value['nama_pemilik'] ?>
+                            </a>
                         </li>
                     </ul>
                 </div>

@@ -90,7 +90,7 @@
 
 
     <!-- BEGIN: Content-->
-    <div class="app-content content">
+    <div class="content">
         <div class="content-wrapper">
             <div class="content-header row">
             </div>
@@ -100,7 +100,7 @@
                         <div class="col-12 mt-auto mb-4">
                             <div class="card banner-bg white">
                                 <div class="card-content">
-                                    <div id="home" class="card-body p-sm-12 p-2">
+                                    <div id="home" class="card-body mt-5 p-sm-12 p-2">
                                         <h1 class="white">Mau Cari Kos ?</h1>
                                         <p class="card-text mb-2">
                                             Lebih mudah pesan dan sewa di Kost Kita.
@@ -139,12 +139,13 @@
                                             style="max-height: 180px">
                                     </a>
                                     <div class="card-body">
-                                        <a href="<?= base_url('detail/' . $value->nama_kost) ?>">
+                                        <a href="<?= base_url('detail/' . $value->id_kost) ?>">
                                             <h5 style="min-height: 40px">
                                                 <?= $value->nama_kost; ?>
                                             </h5>
                                             <div class="d-flex-justify-content-between">
-                                                <a href="" class="btn gradient-light-primary btn-sm">
+                                                <a href="<?= base_url('detail/' . $value->id_kost) ?>"
+                                                    class="btn gradient-light-primary btn-sm">
                                                     <?= $value->jenis_kost; ?>
 
                                                 </a>
@@ -188,11 +189,7 @@
     <!-- <footer class="footer footer-static ">
 
     </footer> -->
-    <?php
-    if ($footer) {
-        echo view($footer);
-    }
-    ?>
+
     </div>
     <nav class="navbar navbar-bottom navbar-dark bg-dark navbar-expand d-lg-none d-xl-none fixed-bottom">
         <ul class="navbar-nav nav-justified w-100">
