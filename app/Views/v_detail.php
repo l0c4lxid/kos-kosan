@@ -11,9 +11,9 @@
         <?= $judul ?> |
         <?= $value['nama_kost'] ?>
     </title>
-
+    <!-- 
     <link rel="apple-touch-icon" href="<?= base_url('') ?>assets/images/logo/papikos_logo.png">
-    <link rel="shortcut icon" type="image/x-icon" href="<?= base_url('') ?>assets/images/logo/papikos_logo.png">
+    <link rel="shortcut icon" type="image/x-icon" href="<?= base_url('') ?>assets/images/logo/papikos_logo.png"> -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600" rel="stylesheet">
 
 
@@ -94,7 +94,8 @@
                 <div class="row">
                     <div class="col-12">
                         <h4 class="card-title">
-                            <a href="#" style="font-size: 15px;"><i class="feather icon-home"></i> Home ></a>
+                            <a href="#" style="font-size: 15px; font-color: #ffffff"><i class="feather icon-home"></i>
+                                Home ></a>
                             <a href="" style="font-size: 15px;">
                                 <?= $value['nama_kost'] ?>
                             </a>
@@ -104,8 +105,6 @@
                             </a>
                         </h4>
                     </div>
-
-
                     <!-- Kode HTML untuk Swiper -->
                     <div class="col-xl-8 col-lg-12">
                         <div class="card">
@@ -174,8 +173,8 @@
                                 <br>
                                 <h4 class='mr-2 mt-2'>
                                     <i class="feather icon-map"></i> Lokasi :
-                                    <?= $value['alamat'] ?> Rt,
-                                    <?= $value['rt'] ?> Rw,
+                                    <?= $value['alamat'] ?> Rt
+                                    <?= $value['rt'] ?>, Rw
                                     <?= $value['rw'] ?>,
                                     <?= $value['kelurahan'] ?>,
                                     <?= $value['kecamatan'] ?>, Sleman, Yogyakarta.
@@ -192,44 +191,44 @@
                                         <ol>
                                             <?php if ($value['ruang_tamu'] == 1): ?>
                                                 <li>
-                                                    Ada Ruang Tamu
+                                                    Ruang Tamu
                                                 </li>
                                             <?php endif; ?>
 
                                             <?php if ($value['ruang_cuci'] == 1): ?>
                                                 <li>
-                                                    Ada Ruang Cuci
+                                                    Ruang Cuci
                                                 </li>
                                             <?php endif; ?>
 
                                             <?php if ($value['ruang_jemur'] == 1): ?>
                                                 <li>
-                                                    Ada Ruang Jemur
+                                                    Ruang Jemur
                                                 </li>
                                             <?php endif; ?>
                                             <?php if ($value['ruang_keluarga'] == 1): ?>
                                                 <li>
-                                                    Ada Ruang Keluarga
+                                                    Ruang Keluarga
                                                 </li>
                                             <?php endif; ?>
                                             <?php if ($value['ruang_makan'] == 1): ?>
                                                 <li>
-                                                    Ada Ruang Makan
+                                                    Ruang Makan
                                                 </li>
                                             <?php endif; ?>
                                             <?php if ($value['ruang_santai'] == 1): ?>
                                                 <li>
-                                                    Ada Ruang Santai
+                                                    Ruang Santai
                                                 </li>
                                             <?php endif; ?>
                                             <?php if ($value['dapur'] == 1): ?>
                                                 <li>
-                                                    Ada Dapur
+                                                    Dapur
                                                 </li>
                                             <?php endif; ?>
                                             <?php if ($value['dapur'] == 1): ?>
                                                 <li>
-                                                    Ada Kulkas
+                                                    Kulkas
                                                 </li>
                                             <?php endif; ?>
                                         </ol>
@@ -248,48 +247,48 @@
 
                                             <?php if ($value['kasur'] == 1): ?>
                                                 <li>
-                                                    <i class="fa-solid fa-bed"></i> Ada Kasur
+                                                    <i class="fa-solid fa-bed"></i> Kasur
                                                 </li>
                                             <?php endif; ?>
 
                                             <?php if ($value['meja'] == 1): ?>
                                                 <li>
-                                                    <i class="fa-solid fa-square"></i> Ada Meja
+                                                    <i class="fa-solid fa-square"></i> Meja
                                                 </li>
                                             <?php endif; ?>
                                             <?php if ($value['bantal'] == 1): ?>
                                                 <li>
-                                                    <i class="fa-solid fa-mattress-pillow"></i> Ada Bantal
+                                                    <i class="fa-solid fa-mattress-pillow"></i> Bantal
                                                 </li>
                                             <?php endif; ?>
                                             <?php if ($value['lemari_baju'] == 1): ?>
                                                 <li>
-                                                    <i class="fa-solid fa-person-chalkboard"></i> Ada Lemari Baju
+                                                    <i class="fa-solid fa-person-chalkboard"></i> Lemari Baju
                                                 </li>
                                             <?php endif; ?>
                                             <?php if ($value['kursi'] == 1): ?>
                                                 <li>
-                                                    <i class="fa-solid fa-chair"></i> Ada Kursi
+                                                    <i class="fa-solid fa-chair"></i> Kursi
                                                 </li>
                                             <?php endif; ?>
                                             <?php if ($value['ventilasi'] == 1): ?>
                                                 <li>
-                                                    <i class="fa-solid fa-kitchen-set"></i> Ada Dapur
+                                                    <i class="fa-solid fa-kitchen-set"></i> Dapur
                                                 </li>
                                             <?php endif; ?>
                                             <?php if ($value['jendela'] == 1): ?>
                                                 <li>
-                                                    <i class="fa-solid fa-person-through-window"></i> Ada Jendela
+                                                    <i class="fa-solid fa-person-through-window"></i> Jendela
                                                 </li>
                                             <?php endif; ?>
                                             <?php if ($value['ac'] == 1): ?>
                                                 <li>
-                                                    <i class="fa-solid fa-wind"></i> Ada Ac
+                                                    <i class="fa-solid fa-wind"></i> Ac
                                                 </li>
                                             <?php endif; ?>
                                             <?php if ($value['listrik'] == 1): ?>
                                                 <li>
-                                                    <i class="fa-solid fa-bolt"></i>Ada Listrik
+                                                    <i class="fa-solid fa-bolt"></i> Listrik
                                                 </li>
                                             <?php endif; ?>
                                         </ul>
@@ -300,25 +299,25 @@
                                         <ul>
                                             <?php if ($value['ember'] == 1): ?>
                                                 <li>
-                                                    <i class="fa-solid fa-bucket  "></i> Ada Ember
+                                                    <i class="fa-solid fa-bucket  "></i> Ember
                                                 </li>
                                             <?php endif; ?>
                                             <?php if ($value['toilet'] == 1): ?>
                                                 <li>
-                                                    <i class="fa-solid fa-toilet  fa-lg "></i></i> Ada toilet
+                                                    <i class="fa-solid fa-toilet  fa-lg "></i></i> toilet
                                                 </li>
                                             <?php endif; ?>
                                             <?php
                                             if ($value['tipe'] == 1):
                                                 ?>
                                                 <li>
-                                                    <i class="fa-solid fa-toilet-paper"></i> Ada di dalam kamar
+                                                    <i class="fa-solid fa-toilet-paper"></i> di dalam kamar
                                                 </li>
                                                 <?php
                                             elseif ($value['tipe'] == 2):
                                                 ?>
                                                 <li>
-                                                    <i class="fa-solid fa-toilet-paper-slash"></i> Ada di luar kamar
+                                                    <i class="fa-solid fa-toilet-paper-slash"></i> di luar kamar
                                                 </li>
                                                 <?php
                                             endif;
@@ -327,12 +326,12 @@
                                             <?php if ($value['bak_mandi'] == 1): ?>
                                                 <li>
                                                     <i class="fa-solid fa-bath  fa-lg"></i></i></i>
-                                                    Ada Bak Mandi
+                                                    Bak Mandi
                                                 </li>
                                             <?php endif; ?>
                                             <?php if ($value['shower'] == 1): ?>
                                                 <li>
-                                                    <i class="fa-solid fa-shower "></i>Ada Shower
+                                                    <i class="fa-solid fa-shower "></i> Shower
                                                 </li>
                                             <?php endif; ?>
                                         </ul>

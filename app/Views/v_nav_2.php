@@ -4,7 +4,7 @@
             <li class="nav-item">
                 <a class="navbar-brand" href="/">
                     <div class="brand-logo"></div>
-                    <h2>Kost Kita</h2>
+                    <h2>Kost UBSI</h2>
                 </a>
             </li>
         </ul>
@@ -15,16 +15,24 @@
                 <div class="mr-auto float-left bookmark-wrapper d-flex align-items-center">
                     <ul class="nav navbar-nav ">
 
+                        <li class="nav-item mobile-menu d-none mr-auto"><a
+                                class="nav-link nav-menu-main menu-toggle hidden-xs" href="#"><i
+                                    class="ficon feather icon-menu"></i></a></li>
+
                         <li class="mr-2 d-none d-xl-block">
-                            <a href="/" style="font-size: 15px;"><i class="feather icon-home"></i> Home ></a>
-                            <a href="#" style="font-size: 15px;">
-                                <?= $value['nama_kost'] ?>
+                            <a href="/" style="color: black"><i class="feather icon-home" data-toggle="tooltip"
+                                    data-placement="top" title="Home"></i> Home
                             </a>
-                            <a href="#" style="font-size: 15px;">
+                        </li>
+                        <li class="mr-2 d-none d-xl-block">
+                            <a href="#" style="color: black"><i class="feather icon-search" data-toggle="tooltip"
+                                    data-placement="top" title="Nama Kost"></i>
+                                <?= $value['nama_kost'] ?>
                                 |
                                 <?= $value['nama_pemilik'] ?>
                             </a>
                         </li>
+
                     </ul>
                 </div>
                 <ul class="nav navbar-nav float-right">

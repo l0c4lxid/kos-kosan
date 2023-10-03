@@ -3,16 +3,10 @@
 <!-- BEGIN: Head-->
 
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
-    <meta name="description" content="Yayasan Peduli Kasih KNDJH Membantu Bersama Meraih Berkah">
-    <meta name="keywords" content="KNDJH,Yayasan Peduli Kasih KNDJH, Kita Bisa, Bantuan Anak Yatim">
-    <meta name="author" content="PIXINVENT">
     <title>Dashboard Pemilik</title>
-    <link rel="apple-touch-icon" href="assets/images/ico/apple-icon-120.png">
+    <!-- <link rel="apple-touch-icon" href="assets/images/ico/apple-icon-120.png">
     <link rel="shortcut icon" type="image/x-icon" href="<?= base_url('') ?>logo/kndjh-logo.ico">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600" rel="stylesheet"> -->
 
 
     <!-- BEGIN: Vendor CSS-->
@@ -25,7 +19,10 @@
     <link rel="stylesheet" type="text/css" href="<?= base_url('') ?>assets/vendors/css/forms/select/select2.min.css">
 
     <!-- END: Vendor CSS-->
-
+    <!-- DataTables -->
+    <link rel="stylesheet" href="<?= base_url('') ?>plugins/datatables-bs4/css/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" href="<?= base_url('') ?>plugins/datatables-responsive/css/responsive.bootstrap4.min.css">
+    <link rel="stylesheet" href="<?= base_url('') ?>plugins/datatables-buttons/css/buttons.bootstrap4.min.css">
     <!-- BEGIN: Theme CSS-->
     <link rel="stylesheet" type="text/css" href="<?= base_url('') ?>assets/css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="<?= base_url('') ?>assets/css/bootstrap-extended.css">
@@ -145,10 +142,33 @@
     <script src=" <?= base_url('') ?>assets/vendors/js/extensions/jquery.rateyo.min.js "></script>
     <script src="<?= base_url('') ?>assets/js/scripts/forms/select/form-select2.js"></script>
     <!-- END: Page JS-->
-
-
-
-
+    <!-- DataTables  & Plugins -->
+    <script src="<?= base_url('') ?>plugins/datatables/jquery.dataTables.min.js"></script>
+    <script src="<?= base_url('') ?>plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
+    <script src="<?= base_url('') ?>plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>
+    <script src="<?= base_url('') ?>plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
+    <script src="<?= base_url('') ?>plugins/datatables-buttons/js/dataTables.buttons.min.js"></script>
+    <script src="<?= base_url('') ?>plugins/datatables-buttons/js/buttons.bootstrap4.min.js"></script>
+    <script src="<?= base_url('') ?>plugins/jszip/jszip.min.js"></script>
+    <script src="<?= base_url('') ?>plugins/pdfmake/pdfmake.min.js"></script>
+    <script src="<?= base_url('') ?>plugins/pdfmake/vfs_fonts.js"></script>
+    <script src="<?= base_url('') ?>plugins/datatables-buttons/js/buttons.html5.min.js"></script>
+    <script src="<?= base_url('') ?>plugins/datatables-buttons/js/buttons.print.min.js"></script>
+    <script src="<?= base_url('') ?>plugins/datatables-buttons/js/buttons.colVis.min.js"></script>
+    <script>
+        $(function () {
+            $("#example1").DataTable({
+                "paging": true,
+                "lengthChange": false,
+                "searching": true,
+                "ordering": true,
+                "info": true,
+                "autoWidth": false,
+                "responsive": true,
+                "buttons": ["copy", "", "excel", "pdf", "print", ""]
+            }).buttons().container().appendTo('#example1_wrapper .col-md-6:eq(0)');
+        });
+    </script>
 
 </body>
 <!-- END: Body-->

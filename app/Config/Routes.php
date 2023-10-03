@@ -16,6 +16,8 @@ $routes->post('/login/aunt', 'Login::Aunt');
 $routes->post('/login/logout', 'Login::logout');
 
 $routes->get('/admin', 'Admin::index', ['filter' => 'auth']);
+$routes->get('/profile', 'Admin::Akun', ['filter' => 'auth']);
+$routes->post('/ubahpassword', 'Admin::UbahAkun', ['filter' => 'auth']);
 $routes->get('/datakamar', 'Admin::DataKamar', ['filter' => 'auth']);
 $routes->get('/tambahdatakamar', 'Admin::TambahDataKamar', ['filter' => 'auth']);
 $routes->post('/simpandatakamar', 'Admin::SimpanDataKamar', ['filter' => 'auth']);

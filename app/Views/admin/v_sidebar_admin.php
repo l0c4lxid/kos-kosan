@@ -2,7 +2,7 @@
     <div class="navbar-header">
         <ul class="nav navbar-nav flex-row">
             <li class="nav-item mr-auto">
-                <a class="navbar-brand" href="<?= base_url('') ?>home">
+                <a class="navbar-brand" href="<?= base_url('#') ?>">
                     <div class="brand-logo"></div>
                     <h2 class="brand-text mb-0">Kost Ubsi</h2>
                 </a>

@@ -14,7 +14,7 @@
                             </div>
                         </div>
                         <div class="text-center">
-                            <h1 class="mb-2 text-white">Welcome, kost </h1>
+                            <h1 class="mb-2 text-white">Welcome, Admin.</h1>
                         </div>
                     </div>
                 </div>

@@ -57,3 +57,52 @@ INFO - 2023-09-30 08:51:55 --> Session: Class initialized using 'CodeIgniter\Ses
 INFO - 2023-09-30 08:52:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2023-09-30 08:52:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2023-09-30 08:53:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-09-30 18:03:39 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it.
+ in D:\XAMPP7\htdocs\kos-kosan\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 D:\XAMPP7\htdocs\kos-kosan\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', 'root', '', 'db_kost', 3360, '', 0)
+#1 D:\XAMPP7\htdocs\kos-kosan\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\XAMPP7\htdocs\kos-kosan\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\XAMPP7\htdocs\kos-kosan\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `kost`.*...', Array, false)
+#4 D:\XAMPP7\htdocs\kos-kosan\app\Models\ModelKost.php(25): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\XAMPP7\htdocs\kos-kosan\app\Controllers\Home.php(16): App\Models\ModelKost->SemuaData()
+#6 D:\XAMPP7\htdocs\kos-kosan\system\CodeIgniter.php(919): App\Controllers\Home->index()
+#7 D:\XAMPP7\htdocs\kos-kosan\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 D:\XAMPP7\htdocs\kos-kosan\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\XAMPP7\htdocs\kos-kosan\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 D:\XAMPP7\htdocs\kos-kosan\system\Commands\Server\rewrite.php(47): require_once('D:\\XAMPP7\\htdoc...')
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it.
+ in D:\XAMPP7\htdocs\kos-kosan\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 D:\XAMPP7\htdocs\kos-kosan\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\XAMPP7\htdocs\kos-kosan\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\XAMPP7\htdocs\kos-kosan\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `kost`.*...', Array, false)
+#3 D:\XAMPP7\htdocs\kos-kosan\app\Models\ModelKost.php(25): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\XAMPP7\htdocs\kos-kosan\app\Controllers\Home.php(16): App\Models\ModelKost->SemuaData()
+#5 D:\XAMPP7\htdocs\kos-kosan\system\CodeIgniter.php(919): App\Controllers\Home->index()
+#6 D:\XAMPP7\htdocs\kos-kosan\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 D:\XAMPP7\htdocs\kos-kosan\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\XAMPP7\htdocs\kos-kosan\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 D:\XAMPP7\htdocs\kos-kosan\system\Commands\Server\rewrite.php(47): require_once('D:\\XAMPP7\\htdoc...')
+#10 {main}
+CRITICAL - 2023-09-30 18:03:39 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it.
+
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `kost`.*, `kamar`.*, `kamar_mandi`.*, `peraturan`.*, `fasilitas_umum`.*, `fasilitas_parkir`.*
+FROM `kost`
+JOIN `kamar` ON `kamar`.`id_kamar` = `kost`.`id_kamar`
+JOIN `kamar_mandi` ON `kamar_mandi`.`id_kamar_mandi` = `kost`.`id_kamar_mandi`
+JOIN `peraturan` ON `peraturan`.`id_peraturan` = `kost`.`id_peraturan`
+JOIN `fasilitas_umum` ON `fasilitas_umum`.`id_fasum` = `kost`.`id_fasum`
+JOIN `fasilitas_parkir` ON `fasilitas_parkir`.`id_fparkir` = `kost`.`id_fparkir`', [], false)
+ 3 APPPATH\Models\ModelKost.php(25): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\Home.php(16): App\Models\ModelKost->SemuaData()
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->index()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\XAMPP7\\htdocs\\kos-kosan\\public\\index.php')

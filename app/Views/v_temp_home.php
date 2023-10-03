@@ -8,10 +8,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
     <title>Kost Ubsi
     </title>
-
+    <!-- 
     <link rel="apple-touch-icon" href="<?= base_url('') ?>/assets/images/logo/papikos_logo.png">
     <link rel="shortcut icon" type="image/x-icon" href="<?= base_url('') ?>/assets/images/logo/papikos_logo.png">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600" rel="stylesheet"> -->
 
 
     <!-- BEGIN: Vendor CSS-->
@@ -103,9 +103,13 @@
                                     <div id="home" class="card-body mt-5 p-sm-12 p-2">
                                         <h1 class="white">Mau Cari Kos ?</h1>
                                         <p class="card-text mb-2">
-                                            Lebih mudah pesan dan sewa di Kost Kita.
-                                        </p>
-                                        <form action="<?= base_url('') ?>" method="GET">
+                                            Lebih mudah pesan dan sewa di Kost UBSI.
+                                        </p><br>
+                                        <br>
+                                        <br>
+                                        <br>
+                                        <br>
+                                        <!-- <form action="<?= base_url('') ?>" method="GET">
                                             <fieldset class="form-group position-relative has-icon-left mb-0">
                                                 <input type="text" name="cari" class="form-control form-control-lg"
                                                     id="searchbar"
@@ -114,7 +118,7 @@
                                                     <i class="feather icon-search px-1"></i>
                                                 </div>
                                             </fieldset>
-                                        </form>
+                                        </form> -->
                                     </div>
                                 </div>
 
@@ -151,14 +155,18 @@
                                                 </a>
                                             </div>
                                             <p class="card-text mt-1 mb-0">
-                                                <?= $value->alamat; ?>
                                                 <i class="feather icon-map-pin"></i>
+                                                <?= $value->alamat; ?> Rt
+                                                <?= $value->rt; ?>, Rw
+                                                <?= $value->rw; ?>,
+                                                <?= $value->kelurahan; ?>,
+                                                <?= $value->kecamatan; ?>, Sleman, Yogyakarta.
                                             </p>
                                             <span class="card-text"
                                                 style="color: rgb(96, 93, 93);text-decoration: line-through">
                                             </span> <br>
                                             <span class="card-text" style="color: black">
-                                                <?= $value->no_hp; ?>
+                                                <?= $value->jarak_ubsi; ?> Km.
                                             </span>
                                         </a>
                                         <div class="card-btn d-flex justify-content-between mt-2">

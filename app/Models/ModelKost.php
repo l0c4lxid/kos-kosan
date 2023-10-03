@@ -8,7 +8,7 @@ class ModelKost extends Model
 {
     protected $table = 'kost';
     protected $primaryKey = 'id_kost';
-    protected $allowedFields = ['id_kamar', 'id_kamar_mandi', 'id_peraturan', 'id_fasum', 'id_fparkir', 'nama_kost', 'alamat', 'rt', 'rw', 'kelurahan', 'kecamatan', 'link_maps', 'nama_pemilik', 'no_hp', 'jenis_kost', 'harga', 'foto_kost', 'foto_kamar', 'jarak_ubsi', 'deskripsi_tambahan'];
+    protected $allowedFields = ['id_kamar', 'id_kamar_mandi', 'id_peraturan', 'id_fasum', 'id_fparkir', 'nama_kost', 'alamat', 'rt', 'rw', 'kelurahan', 'kecamatan', 'nama_pemilik', 'no_hp', 'jenis_kost', 'harga', 'foto_kost', 'foto_kamar', 'jarak_ubsi', 'deskripsi_tambahan'];
 
     public function SemuaData()
     {

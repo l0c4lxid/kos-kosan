@@ -9,6 +9,7 @@ use App\Models\ModelKamarMandi;
 use App\Models\ModelKost;
 use App\Models\ModelPeraturan;
 use App\Models\ModelFasilitasUmum;
+use App\Models\ModelUser;
 
 
 class Admin extends BaseController
@@ -219,7 +220,6 @@ class Admin extends BaseController
             'jarak_ubsi' => $this->request->getPost('jarak_ubsi'),
             'deskripsi_tambahan' => $this->request->getPost('deskripsi_tambahan'),
 
-
             'ukuran' => $this->request->getPost('ukuran'),
             'kasur' => $this->request->getPost('kasur'),
             'meja' => $this->request->getPost('meja'),
@@ -230,8 +230,6 @@ class Admin extends BaseController
             'jendela' => $this->request->getPost('jendela'),
             'ac' => $this->request->getPost('ac'),
             'listrik' => $this->request->getPost('listrik'),
-
-
 
             'tamu' => $this->request->getPost('tamu'),
             'penghuni' => $this->request->getPost('penghuni'),
@@ -279,6 +277,43 @@ class Admin extends BaseController
 
         // Redirect kembali ke halaman list divisi dengan notifikasi
         return redirect()->to('/datakamar')->with('success', '');
+    }
+    public function Akun()
+    {
+        $ModelUser = new ModelUser();
+        $akun = $ModelUser->findAll();
+        $data = [
+            'judul' => 'Dashboard',
+            'subjudul' => 'Dashboard',
+            'navigasi' => 'admin/v_navigasi_admin',
+            'sidebar' => 'admin/v_sidebar_admin',
+            'page' => 'admin/v_profile',
+            'akun' => $akun
+        ];
+        // var_dump($data);
+        // die;
+        return view('admin/v_temp_admin', $data);
+    }
+    public function UbahAkun()
+    {
+        $session = session();
+        $userId = $session->get('id_user');
+        $newUsername = $this->request->getPost('username');
+        $newPassword = $this->request->getPost('password');
+
+        // Pastikan untuk menghash password sebelum menyimpannya ke database
+        $hashedPassword = password_hash($newPassword, PASSWORD_DEFAULT);
+
+        // Lakukan proses update data di database
+        $userModel = new ModelUser();
+        $userModel->update($userId, [
+            'username' => $newUsername,
+            'password' => $hashedPassword,
+        ]);
+        // Setelah berhasil disimpan, tampilkan pesan sukses atau lakukan redirect
+        $session = session();
+        $session->setFlashdata('success', '');
+        return redirect()->to('admin');
     }
 
 }

@@ -11,7 +11,7 @@
                 <div class="card-content">
                     <div class="card-body card-dashboard">
                         <div class="table-responsive">
-                            <table class="table zero-configuration">
+                            <table id="example1" class="table">
                                 <thead>
                                     <tr>
                                         <th width="1%">No</th>

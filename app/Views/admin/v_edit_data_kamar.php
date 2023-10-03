@@ -41,11 +41,6 @@
                                         <input type="char" name="kecamatan" class="form-control "
                                             placeholder="Kecamatan Kost" value='<?= $value['kecamatan'] ?>'>
                                     </div>
-                                    <div class="col-sm-12">
-                                        <label class="col-form-label">Link Gmaps</label>
-                                        <input type="text" name="link_maps" class="form-control "
-                                            placeholder="Link Maps Kost" value='<?= $value['link_maps'] ?>'>
-                                    </div>
                                     <div class="col-sm-6">
                                         <label class="col-form-label">Nama Pemilik</label>
                                         <input type="text" name="nama_pemilik" class="form-control "
